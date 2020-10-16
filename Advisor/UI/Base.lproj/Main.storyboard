@@ -72,24 +72,147 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OHM-nJ-ctG">
-                                <rect key="frame" x="20" y="455.5" width="374" height="349.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPU-np-ZDY">
+                                <rect key="frame" x="20" y="457.5" width="374" height="578"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your education history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgl-au-aCH">
+                                        <rect key="frame" x="10" y="0.0" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="pDr-3c-7Yz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajw-4I-Vjo">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="2"/>
+                                        <color key="backgroundColor" name="borderBackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="ZBp-V5-aUg"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hKB-2f-oo0" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="10" y="72" width="354" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="dX2-Ga-cB5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Title or place"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qzD-dc-uUL" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="10" y="126" width="354" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="yR6-iN-0Tw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Period of time"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TjM-kV-AuQ" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="10" y="180" width="354" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="old-Im-JDt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Title or place"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a2W-QO-uQM">
+                                        <rect key="frame" x="10" y="234" width="354" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="DVK-OS-XG3"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qhI-Zq-Kx9" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="10" y="404" width="354" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="anY-rc-0yK"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="dqk-t6-nXv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Title or place"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyN-lb-HRC">
+                                        <rect key="frame" x="10" y="458" width="354" height="40"/>
+                                        <color key="backgroundColor" name="actionsCANCEL"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="xMj-0k-3qs"/>
+                                        </constraints>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jig-NP-RaX">
+                                        <rect key="frame" x="10" y="518" width="354" height="40"/>
+                                        <color key="backgroundColor" name="actionsOK"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bfW-Bx-n0A"/>
+                                        </constraints>
+                                        <state key="normal" title="Save all Changes">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="background"/>
+                                <constraints>
+                                    <constraint firstItem="lgl-au-aCH" firstAttribute="top" secondItem="bPU-np-ZDY" secondAttribute="top" id="0WC-6K-qXV"/>
+                                    <constraint firstItem="NyN-lb-HRC" firstAttribute="top" secondItem="qhI-Zq-Kx9" secondAttribute="bottom" constant="20" id="0k4-RK-osI"/>
+                                    <constraint firstAttribute="trailing" secondItem="lgl-au-aCH" secondAttribute="trailing" constant="10" id="2aK-rk-Wu8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ajw-4I-Vjo" secondAttribute="trailing" id="2lS-JL-sO2"/>
+                                    <constraint firstAttribute="trailing" secondItem="qhI-Zq-Kx9" secondAttribute="trailing" constant="10" id="4Gd-7p-UFe"/>
+                                    <constraint firstItem="qhI-Zq-Kx9" firstAttribute="leading" secondItem="bPU-np-ZDY" secondAttribute="leading" constant="10" id="9qA-CH-SXi"/>
+                                    <constraint firstItem="Ajw-4I-Vjo" firstAttribute="leading" secondItem="bPU-np-ZDY" secondAttribute="leading" id="A8A-jo-2sU"/>
+                                    <constraint firstAttribute="trailing" secondItem="NyN-lb-HRC" secondAttribute="trailing" constant="10" id="BS5-Oq-HfG"/>
+                                    <constraint firstItem="qhI-Zq-Kx9" firstAttribute="top" secondItem="a2W-QO-uQM" secondAttribute="bottom" constant="20" id="BUa-q6-jhN"/>
+                                    <constraint firstItem="Jig-NP-RaX" firstAttribute="leading" secondItem="bPU-np-ZDY" secondAttribute="leading" constant="10" id="ClG-do-75J"/>
+                                    <constraint firstItem="hKB-2f-oo0" firstAttribute="top" secondItem="Ajw-4I-Vjo" secondAttribute="bottom" constant="20" id="Ngc-ZO-45U"/>
+                                    <constraint firstItem="NyN-lb-HRC" firstAttribute="leading" secondItem="bPU-np-ZDY" secondAttribute="leading" constant="10" id="PXE-v3-kAM"/>
+                                    <constraint firstItem="a2W-QO-uQM" firstAttribute="leading" secondItem="bPU-np-ZDY" secondAttribute="leading" constant="10" id="QEe-5G-OFc"/>
+                                    <constraint firstItem="qzD-dc-uUL" firstAttribute="leading" secondItem="bPU-np-ZDY" secondAttribute="leading" constant="10" id="RBW-dq-t8d"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jig-NP-RaX" secondAttribute="bottom" constant="20" id="RgG-0C-f6r"/>
+                                    <constraint firstItem="Jig-NP-RaX" firstAttribute="top" secondItem="NyN-lb-HRC" secondAttribute="bottom" constant="20" id="TVB-Jf-ics"/>
+                                    <constraint firstItem="lgl-au-aCH" firstAttribute="leading" secondItem="bPU-np-ZDY" secondAttribute="leading" constant="10" id="bOB-yd-hGy"/>
+                                    <constraint firstAttribute="trailing" secondItem="TjM-kV-AuQ" secondAttribute="trailing" constant="10" id="c8I-tX-x0L"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jig-NP-RaX" secondAttribute="trailing" constant="10" id="cS7-tJ-FZx"/>
+                                    <constraint firstAttribute="trailing" secondItem="a2W-QO-uQM" secondAttribute="trailing" constant="10" id="dCo-ys-2gd"/>
+                                    <constraint firstAttribute="trailing" secondItem="hKB-2f-oo0" secondAttribute="trailing" constant="10" id="dGR-Oq-12M"/>
+                                    <constraint firstItem="qzD-dc-uUL" firstAttribute="top" secondItem="hKB-2f-oo0" secondAttribute="bottom" constant="20" id="fQz-KM-BJ2"/>
+                                    <constraint firstItem="TjM-kV-AuQ" firstAttribute="top" secondItem="qzD-dc-uUL" secondAttribute="bottom" constant="20" id="ggQ-UI-kAC"/>
+                                    <constraint firstAttribute="trailing" secondItem="qzD-dc-uUL" secondAttribute="trailing" constant="10" id="hGG-Is-fVW"/>
+                                    <constraint firstItem="TjM-kV-AuQ" firstAttribute="leading" secondItem="bPU-np-ZDY" secondAttribute="leading" constant="10" id="ir9-Do-7m4"/>
+                                    <constraint firstItem="Ajw-4I-Vjo" firstAttribute="top" secondItem="lgl-au-aCH" secondAttribute="bottom" id="jD2-A9-vSb"/>
+                                    <constraint firstItem="a2W-QO-uQM" firstAttribute="top" secondItem="TjM-kV-AuQ" secondAttribute="bottom" constant="20" id="tZh-n5-bSN"/>
+                                    <constraint firstItem="hKB-2f-oo0" firstAttribute="leading" secondItem="bPU-np-ZDY" secondAttribute="leading" constant="10" id="vGx-fR-h7n"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="background"/>
                         <constraints>
                             <constraint firstItem="SLc-RG-lvF" firstAttribute="top" secondItem="zkF-LM-Tsk" secondAttribute="bottom" constant="8" id="4tC-Pj-1YZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OHM-nJ-ctG" secondAttribute="bottom" constant="8" id="OSS-6k-g9r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bPU-np-ZDY" secondAttribute="trailing" constant="20" id="IF6-47-xi2"/>
                             <constraint firstItem="zkF-LM-Tsk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="P0i-zh-Rmu"/>
-                            <constraint firstItem="OHM-nJ-ctG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Yoe-oR-55h"/>
-                            <constraint firstItem="OHM-nJ-ctG" firstAttribute="top" secondItem="SLc-RG-lvF" secondAttribute="bottom" constant="8" id="fh2-z5-YPv"/>
+                            <constraint firstItem="bPU-np-ZDY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XLf-Xh-5Dg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SLc-RG-lvF" secondAttribute="trailing" constant="29" id="h5M-OX-0cS"/>
                             <constraint firstItem="SLc-RG-lvF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="kQd-e5-QK5"/>
                             <constraint firstItem="zkF-LM-Tsk" firstAttribute="trailingMargin" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="qw3-9D-yV1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OHM-nJ-ctG" secondAttribute="trailing" constant="20" id="t8d-7D-y7n"/>
                             <constraint firstItem="zkF-LM-Tsk" firstAttribute="leadingMargin" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ua6-6s-4DG"/>
+                            <constraint firstItem="bPU-np-ZDY" firstAttribute="top" secondItem="SLc-RG-lvF" secondAttribute="bottom" constant="10" id="ufh-sZ-XA4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="blE-CQ-j2h">
@@ -101,7 +224,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="profileImage" destination="cai-wE-zm7" id="Epo-kv-0kQ"/>
-                        <outlet property="sessionsTableView" destination="OHM-nJ-ctG" id="WZP-2E-p7J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -424,9 +546,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YnL-3N-Zdm">
-                                <rect key="frame" x="20" y="108" width="374" height="667"/>
+                                <rect key="frame" x="20" y="108" width="374" height="617"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facturación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGA-mo-ueA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facturación y pagos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGA-mo-ueA">
                                         <rect key="frame" x="10" y="0.0" width="354" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="vDq-UH-9Kh"/>
@@ -443,7 +565,7 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="CJe-KE-kaF">
-                                        <rect key="frame" x="0.0" y="62" width="374" height="595"/>
+                                        <rect key="frame" x="0.0" y="62" width="374" height="545"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNC-p9-eKV">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
@@ -492,7 +614,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EWh-LV-YRK" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                                         <rect key="frame" x="10" y="0.0" width="354" height="45"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="street-address"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Domicilio Fisical"/>
                                                         </userDefinedRuntimeAttributes>
@@ -572,7 +694,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1C2-If-480" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                                         <rect key="frame" x="10" y="0.0" width="354" height="45"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="address-line1"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Colonia"/>
                                                         </userDefinedRuntimeAttributes>
@@ -592,7 +714,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZH-gV-iPX" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                                         <rect key="frame" x="10" y="0.0" width="354" height="45"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="address-level1"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Delegación"/>
                                                         </userDefinedRuntimeAttributes>
@@ -612,7 +734,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YGv-nq-Pd2" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                                         <rect key="frame" x="10" y="0.0" width="354" height="45"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="address-level2"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Ciudad"/>
                                                         </userDefinedRuntimeAttributes>
@@ -632,7 +754,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kjm-oF-01N" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                                         <rect key="frame" x="10" y="0.0" width="354" height="45"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Código Postal"/>
                                                         </userDefinedRuntimeAttributes>
@@ -665,11 +787,11 @@
                                                     <constraint firstItem="ZzE-w1-RmH" firstAttribute="top" secondItem="Rt9-fG-Z3l" secondAttribute="top" id="r9t-b7-gnH"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RnO-8k-g0s">
-                                                <rect key="frame" x="0.0" y="550" width="374" height="45"/>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RnO-8k-g0s">
+                                                <rect key="frame" x="0.0" y="545" width="374" height="0.0"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5z2-RU-9fZ">
-                                                        <rect key="frame" x="10" y="0.0" width="354" height="45"/>
+                                                        <rect key="frame" x="10" y="0.0" width="354" height="0.0"/>
                                                         <color key="backgroundColor" name="actionsCANCEL"/>
                                                         <state key="normal" title="Cancel">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -725,9 +847,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xO-AZ-Szo">
-                                <rect key="frame" x="20" y="108" width="374" height="578"/>
+                                <rect key="frame" x="20" y="108" width="374" height="705"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your education history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf3-RB-e52">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proximas sesiones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf3-RB-e52">
                                         <rect key="frame" x="10" y="0.0" width="354" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="XZ9-GC-6Ha"/>
@@ -743,113 +865,23 @@
                                             <constraint firstAttribute="height" constant="2" id="UGy-oB-DF4"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U9o-CL-mfO" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="10" y="72" width="354" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="w4S-oK-3ii"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Title or place"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ww-v1-ma3" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="10" y="126" width="354" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="77W-Mc-nT9"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Period of time"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e52-Qg-YXP" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="10" y="180" width="354" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="DPH-ly-SHb"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Title or place"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SM7-Yn-NYg">
-                                        <rect key="frame" x="10" y="234" width="354" height="150"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kXl-Uj-p48">
+                                        <rect key="frame" x="10" y="52" width="354" height="653"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="3iT-b6-Gsa"/>
-                                        </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XoT-Dw-05y" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="10" y="404" width="354" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="1Mv-in-jQu"/>
-                                            <constraint firstAttribute="height" constant="34" id="G0S-lp-qf2"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Title or place"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2s-Lh-GAX">
-                                        <rect key="frame" x="10" y="458" width="354" height="40"/>
-                                        <color key="backgroundColor" name="actionsCANCEL"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="wjq-Nv-Fz4"/>
-                                        </constraints>
-                                        <state key="normal" title="Cancel">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2o-Al-Xc1">
-                                        <rect key="frame" x="10" y="518" width="354" height="40"/>
-                                        <color key="backgroundColor" name="actionsOK"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="oBs-5d-O0s"/>
-                                        </constraints>
-                                        <state key="normal" title="Save all Changes">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" name="background"/>
                                 <constraints>
-                                    <constraint firstItem="2ww-v1-ma3" firstAttribute="top" secondItem="U9o-CL-mfO" secondAttribute="bottom" constant="20" id="2xq-DZ-h13"/>
+                                    <constraint firstAttribute="trailing" secondItem="kXl-Uj-p48" secondAttribute="trailing" constant="10" id="09d-2R-igR"/>
                                     <constraint firstAttribute="trailing" secondItem="tf3-RB-e52" secondAttribute="trailing" constant="10" id="5ZR-g2-G0y"/>
-                                    <constraint firstAttribute="trailing" secondItem="e52-Qg-YXP" secondAttribute="trailing" constant="10" id="8yo-hp-a5L"/>
+                                    <constraint firstAttribute="bottom" secondItem="kXl-Uj-p48" secondAttribute="bottom" id="6DB-Bd-LzB"/>
                                     <constraint firstItem="uUx-eH-HQ1" firstAttribute="top" secondItem="tf3-RB-e52" secondAttribute="bottom" id="9NW-5B-1Xp"/>
+                                    <constraint firstItem="kXl-Uj-p48" firstAttribute="leading" secondItem="4xO-AZ-Szo" secondAttribute="leading" constant="10" id="9oq-yU-Je9"/>
                                     <constraint firstItem="uUx-eH-HQ1" firstAttribute="leading" secondItem="4xO-AZ-Szo" secondAttribute="leading" id="D5y-0l-v9o"/>
-                                    <constraint firstItem="U9o-CL-mfO" firstAttribute="leading" secondItem="4xO-AZ-Szo" secondAttribute="leading" constant="10" id="E2D-ZH-K5a"/>
-                                    <constraint firstItem="SM7-Yn-NYg" firstAttribute="top" secondItem="e52-Qg-YXP" secondAttribute="bottom" constant="20" id="FFi-SK-sAl"/>
-                                    <constraint firstAttribute="bottom" secondItem="c2o-Al-Xc1" secondAttribute="bottom" constant="20" id="GxE-Mj-IV4"/>
-                                    <constraint firstItem="XoT-Dw-05y" firstAttribute="leading" secondItem="4xO-AZ-Szo" secondAttribute="leading" constant="10" id="NSA-QW-NQi"/>
-                                    <constraint firstItem="c2o-Al-Xc1" firstAttribute="leading" secondItem="4xO-AZ-Szo" secondAttribute="leading" constant="10" id="Ub3-OB-0hx"/>
-                                    <constraint firstItem="W2s-Lh-GAX" firstAttribute="leading" secondItem="4xO-AZ-Szo" secondAttribute="leading" constant="10" id="VVt-Qf-2vU"/>
-                                    <constraint firstAttribute="trailing" secondItem="SM7-Yn-NYg" secondAttribute="trailing" constant="10" id="WOq-jh-3tX"/>
-                                    <constraint firstAttribute="trailing" secondItem="XoT-Dw-05y" secondAttribute="trailing" constant="10" id="XNe-wm-byw"/>
-                                    <constraint firstItem="2ww-v1-ma3" firstAttribute="leading" secondItem="4xO-AZ-Szo" secondAttribute="leading" constant="10" id="XbL-qA-vJb"/>
-                                    <constraint firstItem="W2s-Lh-GAX" firstAttribute="top" secondItem="XoT-Dw-05y" secondAttribute="bottom" constant="20" id="YG6-ad-Yxh"/>
-                                    <constraint firstAttribute="trailing" secondItem="2ww-v1-ma3" secondAttribute="trailing" constant="10" id="Yle-2c-tdi"/>
-                                    <constraint firstItem="XoT-Dw-05y" firstAttribute="top" secondItem="SM7-Yn-NYg" secondAttribute="bottom" constant="20" id="dUP-EQ-fWD"/>
-                                    <constraint firstItem="U9o-CL-mfO" firstAttribute="top" secondItem="uUx-eH-HQ1" secondAttribute="bottom" constant="20" id="db2-Cy-cVa"/>
-                                    <constraint firstItem="c2o-Al-Xc1" firstAttribute="top" secondItem="W2s-Lh-GAX" secondAttribute="bottom" constant="20" id="h4n-fD-wWK"/>
-                                    <constraint firstItem="SM7-Yn-NYg" firstAttribute="leading" secondItem="4xO-AZ-Szo" secondAttribute="leading" constant="10" id="keN-nG-KMG"/>
-                                    <constraint firstItem="e52-Qg-YXP" firstAttribute="leading" secondItem="4xO-AZ-Szo" secondAttribute="leading" constant="10" id="kpw-Z2-QBn"/>
-                                    <constraint firstAttribute="trailing" secondItem="W2s-Lh-GAX" secondAttribute="trailing" constant="10" id="myT-C9-fO5"/>
+                                    <constraint firstItem="kXl-Uj-p48" firstAttribute="top" secondItem="uUx-eH-HQ1" secondAttribute="bottom" id="fW9-kI-Iad"/>
                                     <constraint firstAttribute="trailing" secondItem="uUx-eH-HQ1" secondAttribute="trailing" id="ppp-uO-zIN"/>
                                     <constraint firstItem="tf3-RB-e52" firstAttribute="leading" secondItem="4xO-AZ-Szo" secondAttribute="leading" constant="10" id="qrq-9X-dvU"/>
                                     <constraint firstItem="tf3-RB-e52" firstAttribute="top" secondItem="4xO-AZ-Szo" secondAttribute="top" id="wTu-og-SGO"/>
-                                    <constraint firstAttribute="trailing" secondItem="c2o-Al-Xc1" secondAttribute="trailing" constant="10" id="weR-U3-aK7"/>
-                                    <constraint firstAttribute="trailing" secondItem="U9o-CL-mfO" secondAttribute="trailing" constant="10" id="yPa-eL-9gE"/>
-                                    <constraint firstItem="e52-Qg-YXP" firstAttribute="top" secondItem="2ww-v1-ma3" secondAttribute="bottom" constant="20" id="zTc-vx-2in"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -857,11 +889,15 @@
                         <color key="backgroundColor" name="borderBackground"/>
                         <constraints>
                             <constraint firstItem="4xO-AZ-Szo" firstAttribute="top" secondItem="Qdc-ZS-UEl" secondAttribute="top" constant="20" id="FKo-Aq-O1K"/>
+                            <constraint firstItem="Qdc-ZS-UEl" firstAttribute="bottom" secondItem="4xO-AZ-Szo" secondAttribute="bottom" id="QjI-Kx-1iv"/>
                             <constraint firstItem="4xO-AZ-Szo" firstAttribute="leading" secondItem="Qdc-ZS-UEl" secondAttribute="leading" constant="20" id="Rcl-Ay-G5h"/>
                             <constraint firstItem="Qdc-ZS-UEl" firstAttribute="trailing" secondItem="4xO-AZ-Szo" secondAttribute="trailing" constant="20" id="aZ5-WX-hJG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iQr-C6-1ji"/>
+                    <connections>
+                        <outlet property="sessionsTableView" destination="kXl-Uj-p48" id="yWE-az-jKY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70s-EZ-NLh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -878,8 +914,8 @@
                         <color key="barTintColor" name="menu"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Us7-7k-WUd" kind="relationship" relationship="viewControllers" id="BnM-FB-MY3"/>
                         <segue destination="44a-vL-vbg" kind="relationship" relationship="viewControllers" id="75J-e7-9bn"/>
+                        <segue destination="Us7-7k-WUd" kind="relationship" relationship="viewControllers" id="BnM-FB-MY3"/>
                         <segue destination="2tj-Uk-ZUj" kind="relationship" relationship="viewControllers" id="RCv-K5-fOc"/>
                         <segue destination="hWG-Zg-vGu" kind="relationship" relationship="viewControllers" id="BRa-DP-VVd"/>
                         <segue destination="WZU-2d-jWs" kind="relationship" relationship="viewControllers" id="y3Z-qL-8hF"/>
@@ -991,9 +1027,6 @@
         <designable name="2A6-QR-nSx">
             <size key="intrinsicContentSize" width="354" height="39.220703125"/>
         </designable>
-        <designable name="2ww-v1-ma3">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
         <designable name="3rM-KY-Dwx">
             <size key="intrinsicContentSize" width="354" height="39.220703125"/>
         </designable>
@@ -1006,13 +1039,10 @@
         <designable name="KYc-Ph-P8y">
             <size key="intrinsicContentSize" width="354" height="39.220703125"/>
         </designable>
-        <designable name="U9o-CL-mfO">
+        <designable name="TjM-kV-AuQ">
             <size key="intrinsicContentSize" width="354" height="39.220703125"/>
         </designable>
         <designable name="XZH-gV-iPX">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="XoT-Dw-05y">
             <size key="intrinsicContentSize" width="354" height="39.220703125"/>
         </designable>
         <designable name="YGv-nq-Pd2">
@@ -1021,10 +1051,16 @@
         <designable name="ZPy-M3-fUN">
             <size key="intrinsicContentSize" width="354" height="39.220703125"/>
         </designable>
-        <designable name="e52-Qg-YXP">
+        <designable name="hKB-2f-oo0">
             <size key="intrinsicContentSize" width="354" height="39.220703125"/>
         </designable>
         <designable name="kjm-oF-01N">
+            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
+        </designable>
+        <designable name="qhI-Zq-Kx9">
+            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
+        </designable>
+        <designable name="qzD-dc-uUL">
             <size key="intrinsicContentSize" width="354" height="39.220703125"/>
         </designable>
     </designables>

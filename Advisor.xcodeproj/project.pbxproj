@@ -28,6 +28,10 @@
 		CE507DA6251D90E300048598 /* TabItem .swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507DA5251D90E300048598 /* TabItem .swift */; };
 		CE507DA8251D925500048598 /* NavigationMenuBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507DA7251D925500048598 /* NavigationMenuBase.swift */; };
 		CE507DAA251D929200048598 /* TabNavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507DA9251D929200048598 /* TabNavigationMenu.swift */; };
+		CE68B6232539720B00D85D1C /* CommonServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68B6222539720B00D85D1C /* CommonServices.swift */; };
+		CE68B6272539723F00D85D1C /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68B6262539723F00D85D1C /* UserRequest.swift */; };
+		CE68B62F253979AB00D85D1C /* SessionRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68B62D253979AB00D85D1C /* SessionRequestTableViewCell.swift */; };
+		CE68B630253979AB00D85D1C /* SessionRequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68B62E253979AB00D85D1C /* SessionRequestTableViewCell.xib */; };
 		CEA4C29A2523A70E00281C16 /* Mentory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4C2992523A70E00281C16 /* Mentory.swift */; };
 		CEA4C29D2523C63400281C16 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4C29B2523C63400281C16 /* SessionTableViewCell.swift */; };
 		CEA4C29E2523C63400281C16 /* SessionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA4C29C2523C63400281C16 /* SessionTableViewCell.xib */; };
@@ -58,6 +62,10 @@
 		CE507DA5251D90E300048598 /* TabItem .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabItem .swift"; sourceTree = "<group>"; };
 		CE507DA7251D925500048598 /* NavigationMenuBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMenuBase.swift; sourceTree = "<group>"; };
 		CE507DA9251D929200048598 /* TabNavigationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationMenu.swift; sourceTree = "<group>"; };
+		CE68B6222539720B00D85D1C /* CommonServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonServices.swift; sourceTree = "<group>"; };
+		CE68B6262539723F00D85D1C /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		CE68B62D253979AB00D85D1C /* SessionRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRequestTableViewCell.swift; sourceTree = "<group>"; };
+		CE68B62E253979AB00D85D1C /* SessionRequestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionRequestTableViewCell.xib; sourceTree = "<group>"; };
 		CEA4C2992523A70E00281C16 /* Mentory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentory.swift; sourceTree = "<group>"; };
 		CEA4C29B2523C63400281C16 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
 		CEA4C29C2523C63400281C16 /* SessionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionTableViewCell.xib; sourceTree = "<group>"; };
@@ -97,6 +105,7 @@
 		CE507D6D251B079700048598 /* Advisor */ = {
 			isa = PBXGroup;
 			children = (
+				CE68B621253971EF00D85D1C /* Services */,
 				CE507D7F251B079900048598 /* Info.plist */,
 				CEA4C2982523A6E200281C16 /* Model */,
 				CE507D89251B09E100048598 /* Resources */,
@@ -183,6 +192,8 @@
 				CE507DA0251B45C800048598 /* MentoringTableViewCell.xib */,
 				CEA4C29B2523C63400281C16 /* SessionTableViewCell.swift */,
 				CEA4C29C2523C63400281C16 /* SessionTableViewCell.xib */,
+				CE68B62D253979AB00D85D1C /* SessionRequestTableViewCell.swift */,
+				CE68B62E253979AB00D85D1C /* SessionRequestTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -195,6 +206,15 @@
 				CE507DA7251D925500048598 /* NavigationMenuBase.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CE68B621253971EF00D85D1C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE68B6222539720B00D85D1C /* CommonServices.swift */,
+				CE68B6262539723F00D85D1C /* UserRequest.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CEA4C2982523A6E200281C16 /* Model */ = {
@@ -284,6 +304,7 @@
 			files = (
 				CE507D7E251B079900048598 /* LaunchScreen.storyboard in Resources */,
 				CE507D92251B314B00048598 /* Colors.xcassets in Resources */,
+				CE68B630253979AB00D85D1C /* SessionRequestTableViewCell.xib in Resources */,
 				CEA4C29E2523C63400281C16 /* SessionTableViewCell.xib in Resources */,
 				CE507D7B251B079900048598 /* Assets.xcassets in Resources */,
 				CE507D76251B079700048598 /* Main.storyboard in Resources */,
@@ -342,7 +363,9 @@
 			files = (
 				CE507D79251B079700048598 /* Advisor.xcdatamodeld in Sources */,
 				CE507D6F251B079700048598 /* AppDelegate.swift in Sources */,
+				CE68B6232539720B00D85D1C /* CommonServices.swift in Sources */,
 				CE507D8D251B109E00048598 /* MainViewController.swift in Sources */,
+				CE68B6272539723F00D85D1C /* UserRequest.swift in Sources */,
 				CEA4C29D2523C63400281C16 /* SessionTableViewCell.swift in Sources */,
 				CE507D97251B451B00048598 /* FinancieViewController.swift in Sources */,
 				CE507D9D251B456200048598 /* BillingViewController.swift in Sources */,
@@ -350,6 +373,7 @@
 				CEA4C29A2523A70E00281C16 /* Mentory.swift in Sources */,
 				CE507DA4251B4C3600048598 /* NavigationBuilder.swift in Sources */,
 				CE507D71251B079700048598 /* SceneDelegate.swift in Sources */,
+				CE68B62F253979AB00D85D1C /* SessionRequestTableViewCell.swift in Sources */,
 				CE507DA1251B45C800048598 /* MentoringTableViewCell.swift in Sources */,
 				CE507D8B251B0FFF00048598 /* SideMenuTableViewController.swift in Sources */,
 				CE507D99251B452900048598 /* ProfileViewController.swift in Sources */,

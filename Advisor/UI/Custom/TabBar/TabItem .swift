@@ -36,12 +36,12 @@ enum TabItem: String, CaseIterable {
     
     var icon: UIImage {
         switch self {
-        case .main:
-            return #imageLiteral(resourceName: "guy")
         case .profile:
-            return #imageLiteral(resourceName: "baseline_sentiment_satisfied_alt_black_24pt")
-        case .finance:
+            return #imageLiteral(resourceName: "guy")
+        case .main:
             return #imageLiteral(resourceName: "baseline_file_copy_black_24pt")
+        case .finance:
+            return #imageLiteral(resourceName: "baseline_sentiment_satisfied_alt_black_24pt")
         case .mentoring:
             return #imageLiteral(resourceName: "baseline_chat_black_24pt")
         case .billing:
