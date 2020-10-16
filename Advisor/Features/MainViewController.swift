@@ -11,11 +11,8 @@ import SideMenu
 
 class MainViewController: UIViewController {
     
-    @IBOutlet private weak var profileImage: UIImageView?
-    @IBOutlet private weak var profileName: UILabel?
-    @IBOutlet private weak var profileDirection: UILabel?
     @IBOutlet private weak var sessionsTableView: UITableView?
-    let identifyCell = "SessionTableViewCell"
+    let identifyCell = "SessionRequestTableViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +32,6 @@ class MainViewController: UIViewController {
         SideMenuManager.default.addScreenEdgePanGesturesToPresent(toView: view)
     }
     
-    
     private func makeSettings() -> SideMenuSettings {
         //            presentationStyle.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "background"))
         //            presentationStyle.menuStartAlpha = CGFloat(menuAlphaSlider.value)
@@ -54,13 +50,11 @@ class MainViewController: UIViewController {
     }
     
     private func setupUI(){
-        profileImage?.makeCircle()
         sessionsTableView?.dataSource = self
         sessionsTableView?.delegate = self
-        let nib = UINib(nibName: "SessionTableViewCell", bundle: nil)
+        let nib = UINib(nibName: "SessionRequestTableViewCell", bundle: nil)
         sessionsTableView?.register(nib, forCellReuseIdentifier: identifyCell)
     }
-    
 }
 
 extension MainViewController: UITableViewDataSource, UITableViewDelegate{
@@ -69,7 +63,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifyCell)! as! SessionTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifyCell)! as! SessionRequestTableViewCell
         cell.setupUI()
         return cell
     }

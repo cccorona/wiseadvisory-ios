@@ -11,8 +11,9 @@ import SideMenu
 
 class ProfileViewController: UIViewController {
     
-    @IBOutlet private weak var sessionsTableView: UITableView?
-    let identifyCell = "SessionRequestTableViewCell"
+    @IBOutlet private weak var profileImage: UIImageView?
+    @IBOutlet private weak var profileName: UILabel?
+    @IBOutlet private weak var profileDirection: UILabel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,26 +52,14 @@ class ProfileViewController: UIViewController {
     }
     
     private func setupUI(){
-        sessionsTableView?.dataSource = self
-        sessionsTableView?.delegate = self
-        let nib = UINib(nibName: "SessionRequestTableViewCell", bundle: nil)
-        sessionsTableView?.register(nib, forCellReuseIdentifier: identifyCell)
-    }
-}
-
-extension ProfileViewController: UITableViewDataSource, UITableViewDelegate{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        profileImage?.makeCircle()
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(dissmisKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifyCell)! as! SessionRequestTableViewCell
-        cell.setupUI()
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 170
+    @objc func dissmisKeyboard(){
+        self.view.endEditing(true)
     }
 }
 
