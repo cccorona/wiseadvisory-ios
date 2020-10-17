@@ -42,6 +42,6 @@ extension MentoringViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "mentoringDetail", sender: nil)
+        //performSegue(withIdentifier: "mentoringDetail", sender: nil)
     }
 }

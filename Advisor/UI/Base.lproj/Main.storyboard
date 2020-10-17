@@ -15,7 +15,7 @@
             <objects>
                 <viewController storyboardIdentifier="MainViewController" title="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ProfileViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jse-ff-ZUf">
@@ -245,6 +245,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="blE-CQ-j2h">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="a3Q-tn-TcX"/>
                         <barButtonItem key="rightBarButtonItem" title="menu" springLoaded="YES" id="dEk-hG-QvY">
                             <connections>
                                 <segue destination="ekC-WC-jqm" kind="presentation" id="Ujv-tm-rC2"/>
@@ -264,7 +265,7 @@
             <objects>
                 <tableViewController id="vlr-Mx-rd3" customClass="SideMenuTableViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GPg-yN-val">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -322,7 +323,7 @@
             <objects>
                 <viewController title="FinancieViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ebZ-oW-bMK" customClass="FinancieViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lIL-RL-6Sf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noS-Bn-m3i">
@@ -540,7 +541,7 @@
             <objects>
                 <viewController title="MentoringViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lia-la-ruM" customClass="MentoringViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DH9-i8-FaZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hyQ-0D-HNc">
@@ -572,7 +573,7 @@
             <objects>
                 <viewController title="BillingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="L23-4r-rPa" customClass="BillingViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HEE-cC-l6F">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YnL-3N-Zdm">
@@ -873,7 +874,7 @@
             <objects>
                 <viewController title="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g1p-3E-1Vp" customClass="MainViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qdu-2a-cSQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xO-AZ-Szo">
@@ -1052,7 +1053,7 @@
         <!--MentoringDetailViewController-->
         <scene sceneID="kAM-dW-1gR">
             <objects>
-                <viewController storyboardIdentifier="MentoringDetailViewController" title="MentoringDetailViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q1i-ao-aAW" customClass="MentoringDetailViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MentoringDetailViewController" title="MentoringDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q1i-ao-aAW" customClass="MentoringDetailViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nSN-Ll-hm4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1183,50 +1184,6 @@
             <point key="canvasLocation" x="2393" y="2108"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="1C2-If-480">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="2A6-QR-nSx">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="3rM-KY-Dwx">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="EWh-LV-YRK">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="FUs-FL-fRa">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="KYc-Ph-P8y">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="TjM-kV-AuQ">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="XZH-gV-iPX">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="YGv-nq-Pd2">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="ZPy-M3-fUN">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="hKB-2f-oo0">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="kjm-oF-01N">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="qhI-Zq-Kx9">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-        <designable name="qzD-dc-uUL">
-            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
-        </designable>
-    </designables>
     <resources>
         <image name="guy" width="1200" height="675"/>
         <image name="trip" width="1249.5" height="780.5"/>
