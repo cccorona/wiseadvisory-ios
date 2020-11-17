@@ -15,7 +15,7 @@
             <objects>
                 <viewController storyboardIdentifier="MainViewController" title="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ProfileViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jse-ff-ZUf">
@@ -367,7 +367,7 @@
             <objects>
                 <viewController title="FinancieViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ebZ-oW-bMK" customClass="FinancieViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lIL-RL-6Sf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noS-Bn-m3i">
@@ -585,7 +585,7 @@
             <objects>
                 <viewController title="MentoringViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lia-la-ruM" customClass="MentoringViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DH9-i8-FaZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mentorías" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQv-cF-WLr">
@@ -630,7 +630,7 @@
             <objects>
                 <viewController title="BillingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="L23-4r-rPa" customClass="BillingViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HEE-cC-l6F">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YnL-3N-Zdm">
@@ -923,6 +923,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7bU-Lm-PVx"/>
+                    <connections>
+                        <outlet property="bankTxtField" destination="KYc-Ph-P8y" id="j0G-yN-Fd2"/>
+                        <outlet property="cfdiTxtField" destination="2A6-QR-nSx" id="Dv0-LB-Qxe"/>
+                        <outlet property="cityTxtField" destination="YGv-nq-Pd2" id="p0z-6m-Jm5"/>
+                        <outlet property="clabeTxtField" destination="ZPy-M3-fUN" id="RI2-we-ULy"/>
+                        <outlet property="directionFiscalTxtField" destination="EWh-LV-YRK" id="F0L-b4-ikt"/>
+                        <outlet property="locationTxtField" destination="1C2-If-480" id="sZ2-cW-GdE"/>
+                        <outlet property="postalCodeTxtField" destination="kjm-oF-01N" id="zhD-Aa-wKO"/>
+                        <outlet property="rfcTxtField" destination="FUs-FL-fRa" id="Ofz-Jz-fAd"/>
+                        <outlet property="socialTxtField" destination="3rM-KY-Dwx" id="i9w-IB-LeY"/>
+                        <outlet property="stateTxtField" destination="XZH-gV-iPX" id="loM-4a-TT0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1j6-lj-JNR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -933,7 +945,7 @@
             <objects>
                 <viewController title="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g1p-3E-1Vp" customClass="MainViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qdu-2a-cSQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xO-AZ-Szo">
@@ -1113,7 +1125,7 @@
             <objects>
                 <viewController storyboardIdentifier="MentoringDetailViewController" title="MentoringDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q1i-ao-aAW" customClass="MentoringDetailViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nSN-Ll-hm4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Jz-bN-jOB">
