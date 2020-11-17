@@ -53,9 +53,9 @@ class ProfileViewController: UIViewController {
     
     private func setupUI(){
         profileImage?.makeCircle()
-        let tap = UITapGestureRecognizer(target: self.view, action: #selector(dissmisKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
+        //let tap = UITapGestureRecognizer(target: self.view, action: #selector(dissmisKeyboard))
+        //tap.cancelsTouchesInView = false
+        //view.addGestureRecognizer(tap)
     }
     
     @objc func dissmisKeyboard(){

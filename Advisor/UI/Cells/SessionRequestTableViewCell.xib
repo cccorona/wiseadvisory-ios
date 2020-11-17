@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -39,7 +39,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnj-dz-7Wz">
-                        <rect key="frame" x="10" y="70" width="411" height="14.5"/>
+                        <rect key="frame" x="10" y="70" width="411" height="28"/>
                         <string key="text">Descripción:
  </string>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -47,7 +47,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jJU-yx-auT">
-                        <rect key="frame" x="10" y="92.5" width="411" height="113.5"/>
+                        <rect key="frame" x="10" y="106" width="411" height="100"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bkW-44-wxV">
                                 <rect key="frame" x="0.0" y="0.0" width="411" height="50"/>
@@ -136,18 +136,18 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1x-kH-j8Q">
-                                <rect key="frame" x="0.0" y="50" width="411" height="63.5"/>
+                                <rect key="frame" x="0.0" y="50" width="411" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oTD-rZ-8u8">
-                                        <rect key="frame" x="0.0" y="0.0" width="82" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scZ-73-1eh">
-                                                <rect key="frame" x="17.5" y="8" width="47.5" height="47.5"/>
+                                                <rect key="frame" x="8.5" y="8" width="65" height="34"/>
                                                 <color key="backgroundColor" name="actionsOK"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="scZ-73-1eh" secondAttribute="height" multiplier="1:1" id="nfq-wz-tCr"/>
+                                                    <constraint firstAttribute="width" constant="65" id="Kea-b6-w5E"/>
                                                 </constraints>
-                                                <state key="normal" title="✚">
+                                                <state key="normal" title="Aceptar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -161,15 +161,15 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWq-LU-CfE">
-                                        <rect key="frame" x="82" y="0.0" width="82.5" height="63.5"/>
+                                        <rect key="frame" x="82" y="0.0" width="82.5" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkM-G0-QJt">
-                                                <rect key="frame" x="17.5" y="8" width="47.5" height="47.5"/>
+                                                <rect key="frame" x="6.5" y="8" width="70" height="34"/>
                                                 <color key="backgroundColor" name="actionsCANCEL"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="xkM-G0-QJt" secondAttribute="height" multiplier="1:1" id="aMa-sr-ggG"/>
+                                                    <constraint firstAttribute="width" constant="70" id="wRp-AO-WBJ"/>
                                                 </constraints>
-                                                <state key="normal" title="−">
+                                                <state key="normal" title="Rechazar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -183,13 +183,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgV-NS-deQ">
-                                        <rect key="frame" x="164.5" y="0.0" width="246.5" height="63.5"/>
+                                        <rect key="frame" x="164.5" y="0.0" width="246.5" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="OWq-LU-CfE" firstAttribute="width" secondItem="oTD-rZ-8u8" secondAttribute="width" id="Lzu-BC-Ajg"/>
                                     <constraint firstItem="QgV-NS-deQ" firstAttribute="width" secondItem="I1x-kH-j8Q" secondAttribute="width" multiplier="0.6" id="ZgU-sC-0nP"/>
+                                    <constraint firstAttribute="height" constant="50" id="yvQ-GX-UtD"/>
                                 </constraints>
                             </stackView>
                         </subviews>
