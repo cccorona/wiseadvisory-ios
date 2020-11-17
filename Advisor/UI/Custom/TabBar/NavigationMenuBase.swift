@@ -9,7 +9,7 @@
 import UIKit
 class NavigationMenuBaseController: UITabBarController {
     var customTabBar: TabNavigationMenu!
-    var tabBarHeight: CGFloat = 85.0
+    static var tabBarHeight: CGFloat = 85.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ class NavigationMenuBaseController: UITabBarController {
             self.customTabBar.leadingAnchor.constraint(equalTo: tabBar.leadingAnchor),
             self.customTabBar.trailingAnchor.constraint(equalTo: tabBar.trailingAnchor),
             self.customTabBar.widthAnchor.constraint(equalToConstant: tabBar.frame.width),
-            self.customTabBar.heightAnchor.constraint(equalToConstant: tabBarHeight), // Fixed height for nav menu
+            self.customTabBar.heightAnchor.constraint(equalToConstant: NavigationMenuBaseController.tabBarHeight), // Fixed height for nav menu
             self.customTabBar.bottomAnchor.constraint(equalTo: tabBar.bottomAnchor)
         ])
         for i in 0 ..< menuItems.count {
