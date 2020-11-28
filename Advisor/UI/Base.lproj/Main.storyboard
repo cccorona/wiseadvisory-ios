@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BfC-Fu-Hj4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="flT-IJ-kpK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -578,7 +578,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEJ-0P-Lbw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650.7246376811595" y="1457.8125"/>
+            <point key="canvasLocation" x="2386" y="1458"/>
         </scene>
         <!--MentoringViewController-->
         <scene sceneID="QOF-YZ-gv0">
@@ -623,7 +623,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Jw-YO-iCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650.7246376811595" y="2107.3660714285716"/>
+            <point key="canvasLocation" x="1643" y="2126"/>
         </scene>
         <!--BillingViewController-->
         <scene sceneID="7q4-sz-2ZS">
@@ -1005,10 +1005,106 @@
             </objects>
             <point key="canvasLocation" x="1650.7246376811595" y="811.60714285714278"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="pdN-rH-Bjp">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="4tf-fl-47H" customClass="LoginViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gnj-AT-O5Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2t-xj-nXs">
+                                <rect key="frame" x="20" y="339" width="374" height="272"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ged-sg-Wum">
+                                        <rect key="frame" x="20" y="212" width="334" height="40"/>
+                                        <color key="backgroundColor" name="actionsOK"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="8M8-nj-mWt"/>
+                                        </constraints>
+                                        <state key="normal" title="ENTRAR A MI CUENTA">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INICIA SESIÓN A TU CUENTA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUJ-JL-HQp">
+                                        <rect key="frame" x="20" y="20" width="334" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wXA-DC-yEs" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="20" y="123" width="334" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Contraseña"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Contraseña"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Cs-AC-g2D" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="20" y="64" width="334" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Email"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="PUJ-JL-HQp" secondAttribute="trailing" constant="20" id="1bn-Fn-AFY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ged-sg-Wum" secondAttribute="trailing" constant="20" id="JQT-rs-5T2"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ged-sg-Wum" secondAttribute="bottom" constant="20" id="KyB-qm-ZOc"/>
+                                    <constraint firstItem="wXA-DC-yEs" firstAttribute="top" secondItem="7Cs-AC-g2D" secondAttribute="bottom" constant="20" id="LUK-jr-EKF"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Cs-AC-g2D" secondAttribute="trailing" constant="20" id="RzP-U9-oPp"/>
+                                    <constraint firstItem="PUJ-JL-HQp" firstAttribute="leading" secondItem="K2t-xj-nXs" secondAttribute="leading" constant="20" id="U2F-ix-Cwi"/>
+                                    <constraint firstAttribute="trailing" secondItem="wXA-DC-yEs" secondAttribute="trailing" constant="20" id="XlY-Jl-b1U"/>
+                                    <constraint firstItem="PUJ-JL-HQp" firstAttribute="top" secondItem="K2t-xj-nXs" secondAttribute="top" constant="20" id="ZXS-6Z-VAZ"/>
+                                    <constraint firstItem="7Cs-AC-g2D" firstAttribute="leading" secondItem="K2t-xj-nXs" secondAttribute="leading" constant="20" id="cH0-hg-fxj"/>
+                                    <constraint firstItem="Ged-sg-Wum" firstAttribute="leading" secondItem="K2t-xj-nXs" secondAttribute="leading" constant="20" id="fJl-K3-KjO"/>
+                                    <constraint firstItem="wXA-DC-yEs" firstAttribute="leading" secondItem="K2t-xj-nXs" secondAttribute="leading" constant="20" id="m3X-wq-a2q"/>
+                                    <constraint firstItem="Ged-sg-Wum" firstAttribute="top" secondItem="wXA-DC-yEs" secondAttribute="bottom" constant="50" id="pae-mV-50V"/>
+                                    <constraint firstItem="7Cs-AC-g2D" firstAttribute="top" secondItem="PUJ-JL-HQp" secondAttribute="bottom" constant="20" id="yWF-3L-JDX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yLb-wd-vNh"/>
+                        <color key="backgroundColor" name="menu"/>
+                        <constraints>
+                            <constraint firstItem="K2t-xj-nXs" firstAttribute="leading" secondItem="yLb-wd-vNh" secondAttribute="leading" constant="20" id="FsL-j1-v8k"/>
+                            <constraint firstItem="yLb-wd-vNh" firstAttribute="trailing" secondItem="K2t-xj-nXs" secondAttribute="trailing" constant="20" id="WC1-7h-R3H"/>
+                            <constraint firstItem="K2t-xj-nXs" firstAttribute="centerY" secondItem="yLb-wd-vNh" secondAttribute="centerY" id="e3e-en-CXo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1fw-o6-N10"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="wXA-DC-yEs" id="gJi-Sd-Qbt"/>
+                        <outlet property="signInButton" destination="Ged-sg-Wum" id="QQ2-fy-bgg"/>
+                        <outlet property="usernameTextField" destination="7Cs-AC-g2D" id="Fkc-Hw-tzD"/>
+                        <segue destination="BfC-Fu-Hj4" kind="show" identifier="homeSegue" id="UeN-XY-FWZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="haU-n4-a98" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-102.89855072463769" y="1457.8125"/>
+        </scene>
         <!--Navigation Menu Base Controller-->
         <scene sceneID="hnJ-2p-WF3">
             <objects>
                 <tabBarController id="BfC-Fu-Hj4" customClass="NavigationMenuBaseController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Z7Z-9Z-tA4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="PcT-YL-o8V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1025,7 +1121,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mV-DX-tvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="1458"/>
+            <point key="canvasLocation" x="877" y="1458"/>
         </scene>
         <!--NavigatorMainViewController-->
         <scene sceneID="YVh-7N-jd4">
@@ -1063,7 +1159,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9r-Be-Mh6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="876.81159420289862" y="1457.8125"/>
+            <point key="canvasLocation" x="1651" y="1458"/>
         </scene>
         <!--NavigatorMentoringViewController-->
         <scene sceneID="7vI-nR-HMU">
@@ -1082,7 +1178,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIp-T3-mLA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884.05797101449286" y="2108.7053571428569"/>
+            <point key="canvasLocation" x="877" y="2127"/>
         </scene>
         <!--NavigatorMentoringViewController-->
         <scene sceneID="bkB-uC-dFr">
@@ -1251,7 +1347,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwG-2W-gPy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2393" y="2108"/>
+            <point key="canvasLocation" x="2386" y="2126"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wWF-27-LmK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="flT-IJ-kpK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mxg-gX-P1R">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4tf-fl-47H" kind="relationship" relationship="rootViewController" id="Pa6-Kb-0Mh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRh-6Z-IWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1013.0434782608696" y="1457.8125"/>
         </scene>
     </scenes>
     <designables>
@@ -1263,6 +1377,9 @@
         </designable>
         <designable name="3rM-KY-Dwx">
             <size key="intrinsicContentSize" width="354" height="39.220703125"/>
+        </designable>
+        <designable name="7Cs-AC-g2D">
+            <size key="intrinsicContentSize" width="334" height="39.220703125"/>
         </designable>
         <designable name="C4v-fm-4K6">
             <size key="intrinsicContentSize" width="354" height="39.220703125"/>
@@ -1308,6 +1425,9 @@
         </designable>
         <designable name="vTv-pr-M8m">
             <size key="intrinsicContentSize" width="354" height="39.220703125"/>
+        </designable>
+        <designable name="wXA-DC-yEs">
+            <size key="intrinsicContentSize" width="334" height="39.220703125"/>
         </designable>
     </designables>
     <resources>

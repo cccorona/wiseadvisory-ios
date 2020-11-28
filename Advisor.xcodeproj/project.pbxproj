@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		C505DB8F34BA0C0AA8D13A44 /* Pods_Advisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD19C77AD936DC0276CD8909 /* Pods_Advisor.framework */; };
+		CE3ED09825729F770068D577 /* GlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED09725729F770068D577 /* GlobalValues.swift */; };
+		CE3ED09B2572BFA70068D577 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED09A2572BFA70068D577 /* Credential.swift */; };
+		CE3ED0A02572E27B0068D577 /* StatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED09F2572E27B0068D577 /* StatusResponse.swift */; };
+		CE46079C2571CEFA0011D938 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46079B2571CEF90011D938 /* WebServices.swift */; };
+		CE46079F2571CF0C0011D938 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46079E2571CF0C0011D938 /* Constants.swift */; };
+		CE4607AC25720AA90011D938 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4607AA25720AA90011D938 /* LoadingViewController.swift */; };
+		CE4607AD25720AA90011D938 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4607AB25720AA90011D938 /* LoadingViewController.xib */; };
+		CE4607B12572155C0011D938 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4607B02572155C0011D938 /* LoginViewController.swift */; };
+		CE4607B4257217DC0011D938 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4607B3257217DC0011D938 /* LoginResponse.swift */; };
+		CE4607BE257219AF0011D938 /* MessageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4607B7257219AE0011D938 /* MessageObject.swift */; };
+		CE4607C2257219AF0011D938 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4607BB257219AF0011D938 /* Utils.swift */; };
 		CE507D6F251B079700048598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507D6E251B079700048598 /* AppDelegate.swift */; };
 		CE507D71251B079700048598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507D70251B079700048598 /* SceneDelegate.swift */; };
 		CE507D76251B079700048598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE507D74251B079700048598 /* Main.storyboard */; };
@@ -29,7 +40,6 @@
 		CE507DA8251D925500048598 /* NavigationMenuBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507DA7251D925500048598 /* NavigationMenuBase.swift */; };
 		CE507DAA251D929200048598 /* TabNavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507DA9251D929200048598 /* TabNavigationMenu.swift */; };
 		CE68B6232539720B00D85D1C /* CommonServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68B6222539720B00D85D1C /* CommonServices.swift */; };
-		CE68B6272539723F00D85D1C /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68B6262539723F00D85D1C /* UserRequest.swift */; };
 		CE68B62F253979AB00D85D1C /* SessionRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68B62D253979AB00D85D1C /* SessionRequestTableViewCell.swift */; };
 		CE68B630253979AB00D85D1C /* SessionRequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68B62E253979AB00D85D1C /* SessionRequestTableViewCell.xib */; };
 		CE68B6332539875500D85D1C /* MentoringDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68B6322539875500D85D1C /* MentoringDetailViewController.swift */; };
@@ -41,6 +51,17 @@
 /* Begin PBXFileReference section */
 		3DD85D547C8795FF18A99B2A /* Pods-Advisor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advisor.debug.xcconfig"; path = "Target Support Files/Pods-Advisor/Pods-Advisor.debug.xcconfig"; sourceTree = "<group>"; };
 		98E8EB35BEB737A0AD2F09C1 /* Pods-Advisor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advisor.release.xcconfig"; path = "Target Support Files/Pods-Advisor/Pods-Advisor.release.xcconfig"; sourceTree = "<group>"; };
+		CE3ED09725729F770068D577 /* GlobalValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValues.swift; sourceTree = "<group>"; };
+		CE3ED09A2572BFA70068D577 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		CE3ED09F2572E27B0068D577 /* StatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusResponse.swift; sourceTree = "<group>"; };
+		CE46079B2571CEF90011D938 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		CE46079E2571CF0C0011D938 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE4607AA25720AA90011D938 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		CE4607AB25720AA90011D938 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		CE4607B02572155C0011D938 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE4607B3257217DC0011D938 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		CE4607B7257219AE0011D938 /* MessageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageObject.swift; sourceTree = "<group>"; };
+		CE4607BB257219AF0011D938 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CE507D6B251B079700048598 /* Advisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Advisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE507D6E251B079700048598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE507D70251B079700048598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +85,6 @@
 		CE507DA7251D925500048598 /* NavigationMenuBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMenuBase.swift; sourceTree = "<group>"; };
 		CE507DA9251D929200048598 /* TabNavigationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationMenu.swift; sourceTree = "<group>"; };
 		CE68B6222539720B00D85D1C /* CommonServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonServices.swift; sourceTree = "<group>"; };
-		CE68B6262539723F00D85D1C /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		CE68B62D253979AB00D85D1C /* SessionRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRequestTableViewCell.swift; sourceTree = "<group>"; };
 		CE68B62E253979AB00D85D1C /* SessionRequestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionRequestTableViewCell.xib; sourceTree = "<group>"; };
 		CE68B6322539875500D85D1C /* MentoringDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentoringDetailViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +106,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE46079A2571CEE00011D938 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE46079E2571CF0C0011D938 /* Constants.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE4607A925720A5C0011D938 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				CE4607AA25720AA90011D938 /* LoadingViewController.swift */,
+				CE4607AB25720AA90011D938 /* LoadingViewController.xib */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		CE4607B6257219920011D938 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CE4607B7257219AE0011D938 /* MessageObject.swift */,
+				CE4607BB257219AF0011D938 /* Utils.swift */,
+				CE3ED09725729F770068D577 /* GlobalValues.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		CE507D62251B079700048598 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +154,7 @@
 		CE507D6D251B079700048598 /* Advisor */ = {
 			isa = PBXGroup;
 			children = (
+				CE4607B6257219920011D938 /* Utilities */,
 				CE68B621253971EF00D85D1C /* Services */,
 				CE507D7F251B079900048598 /* Info.plist */,
 				CEA4C2982523A6E200281C16 /* Model */,
@@ -122,6 +170,7 @@
 		CE507D85251B09A500048598 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CE4607A925720A5C0011D938 /* Loading */,
 				CE507D9E251B45B700048598 /* Cells */,
 				CE507D93251B390600048598 /* Custom */,
 				CE507D7C251B079900048598 /* LaunchScreen.storyboard */,
@@ -133,12 +182,14 @@
 		CE507D86251B09AC00048598 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				CE46079A2571CEE00011D938 /* Services */,
 				CE507D90251B218200048598 /* DrawerMenu */,
 				CE507D8C251B109E00048598 /* MainViewController.swift */,
 				CE507D98251B452900048598 /* ProfileViewController.swift */,
 				CE507D96251B451B00048598 /* FinancieViewController.swift */,
 				CE68B6352539877900D85D1C /* Mentoring */,
 				CE507D9C251B456200048598 /* BillingViewController.swift */,
+				CE4607B02572155C0011D938 /* LoginViewController.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -156,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				CE507D77251B079700048598 /* Advisor.xcdatamodeld */,
+				CE3ED09A2572BFA70068D577 /* Credential.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -213,8 +265,8 @@
 		CE68B621253971EF00D85D1C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CE46079B2571CEF90011D938 /* WebServices.swift */,
 				CE68B6222539720B00D85D1C /* CommonServices.swift */,
-				CE68B6262539723F00D85D1C /* UserRequest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -232,6 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				CEA4C2992523A70E00281C16 /* Mentory.swift */,
+				CE4607B3257217DC0011D938 /* LoginResponse.swift */,
+				CE3ED09F2572E27B0068D577 /* StatusResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,6 +374,7 @@
 				CE507D7B251B079900048598 /* Assets.xcassets in Resources */,
 				CE507D76251B079700048598 /* Main.storyboard in Resources */,
 				CE507DA2251B45C800048598 /* MentoringTableViewCell.xib in Resources */,
+				CE4607AD25720AA90011D938 /* LoadingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,16 +431,25 @@
 				CE507D6F251B079700048598 /* AppDelegate.swift in Sources */,
 				CE68B6232539720B00D85D1C /* CommonServices.swift in Sources */,
 				CE507D8D251B109E00048598 /* MainViewController.swift in Sources */,
-				CE68B6272539723F00D85D1C /* UserRequest.swift in Sources */,
+				CE46079C2571CEFA0011D938 /* WebServices.swift in Sources */,
+				CE4607B4257217DC0011D938 /* LoginResponse.swift in Sources */,
+				CE46079F2571CF0C0011D938 /* Constants.swift in Sources */,
+				CE3ED09825729F770068D577 /* GlobalValues.swift in Sources */,
 				CEA4C29D2523C63400281C16 /* SessionTableViewCell.swift in Sources */,
+				CE4607BE257219AF0011D938 /* MessageObject.swift in Sources */,
 				CE507D97251B451B00048598 /* FinancieViewController.swift in Sources */,
 				CE507D9D251B456200048598 /* BillingViewController.swift in Sources */,
 				CE507DA6251D90E300048598 /* TabItem .swift in Sources */,
+				CE4607AC25720AA90011D938 /* LoadingViewController.swift in Sources */,
 				CEA4C29A2523A70E00281C16 /* Mentory.swift in Sources */,
+				CE4607B12572155C0011D938 /* LoginViewController.swift in Sources */,
 				CE507DA4251B4C3600048598 /* NavigationBuilder.swift in Sources */,
 				CE507D71251B079700048598 /* SceneDelegate.swift in Sources */,
+				CE3ED0A02572E27B0068D577 /* StatusResponse.swift in Sources */,
+				CE4607C2257219AF0011D938 /* Utils.swift in Sources */,
 				CE68B62F253979AB00D85D1C /* SessionRequestTableViewCell.swift in Sources */,
 				CE68B6332539875500D85D1C /* MentoringDetailViewController.swift in Sources */,
+				CE3ED09B2572BFA70068D577 /* Credential.swift in Sources */,
 				CE507DA1251B45C800048598 /* MentoringTableViewCell.swift in Sources */,
 				CE507D8B251B0FFF00048598 /* SideMenuTableViewController.swift in Sources */,
 				CE507D99251B452900048598 /* ProfileViewController.swift in Sources */,

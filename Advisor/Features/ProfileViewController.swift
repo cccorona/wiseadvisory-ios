@@ -8,6 +8,7 @@
 
 import UIKit
 import SideMenu
+import Kingfisher
 
 class ProfileViewController: UIViewController {
     
@@ -48,11 +49,16 @@ class ProfileViewController: UIViewController {
         settings.blurEffectStyle = .dark
         settings.statusBarEndAlpha = 1
         
+        if let picture = GlobalValues.shared.user?.picture , let url = URL.init(string: "https:"+picture) {
+            profileImage?.kf.setImage(with: url, placeholder: UIImage(named: "guy") )
+        }
         return settings
     }
     
+    
     private func setupUI(){
         profileImage?.makeCircle()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         let tap = UITapGestureRecognizer(target: self, action: #selector(dissmisKeyboard))

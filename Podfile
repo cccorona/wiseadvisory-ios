@@ -6,6 +6,9 @@ target 'Advisor' do
   use_frameworks!
 
   # Pods for Advisor
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'Timepiece'
   pod 'SideMenu'
   pod 'SkyFloatingLabelTextField'
   pod 'Kingfisher', '~> 5.15'

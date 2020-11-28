@@ -7,6 +7,7 @@
 //
 
 import SideMenu
+import Kingfisher
 
 class SideMenuTableViewController: UITableViewController {
     
@@ -21,9 +22,13 @@ class SideMenuTableViewController: UITableViewController {
         }
         
         // Set up a cool background image for demo purposes
+        
         let imageView = UIImageView(image: #imageLiteral(resourceName: "guy"))
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = UIColor.black.withAlphaComponent(0.2)
+        if let picture = GlobalValues.shared.user?.picture , let url = URL.init(string: "https:"+picture) {
+            imageView.kf.setImage(with: url
+        }
         tableView.backgroundView = imageView
     }
     

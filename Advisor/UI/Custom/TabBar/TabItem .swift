@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Kingfisher
+
 enum TabItem: String, CaseIterable {
     case main
     case profile
