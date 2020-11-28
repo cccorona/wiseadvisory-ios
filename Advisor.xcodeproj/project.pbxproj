@@ -11,8 +11,8 @@
 		CE3ED09825729F770068D577 /* GlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED09725729F770068D577 /* GlobalValues.swift */; };
 		CE3ED09B2572BFA70068D577 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED09A2572BFA70068D577 /* Credential.swift */; };
 		CE3ED0A02572E27B0068D577 /* StatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED09F2572E27B0068D577 /* StatusResponse.swift */; };
+		CE3ED0A32572E3CD0068D577 /* NextSessionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED0A22572E3CD0068D577 /* NextSessionsResponse.swift */; };
 		CE46079C2571CEFA0011D938 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46079B2571CEF90011D938 /* WebServices.swift */; };
-		CE46079F2571CF0C0011D938 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46079E2571CF0C0011D938 /* Constants.swift */; };
 		CE4607AC25720AA90011D938 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4607AA25720AA90011D938 /* LoadingViewController.swift */; };
 		CE4607AD25720AA90011D938 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4607AB25720AA90011D938 /* LoadingViewController.xib */; };
 		CE4607B12572155C0011D938 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4607B02572155C0011D938 /* LoginViewController.swift */; };
@@ -54,8 +54,8 @@
 		CE3ED09725729F770068D577 /* GlobalValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValues.swift; sourceTree = "<group>"; };
 		CE3ED09A2572BFA70068D577 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		CE3ED09F2572E27B0068D577 /* StatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusResponse.swift; sourceTree = "<group>"; };
+		CE3ED0A22572E3CD0068D577 /* NextSessionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextSessionsResponse.swift; sourceTree = "<group>"; };
 		CE46079B2571CEF90011D938 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
-		CE46079E2571CF0C0011D938 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE4607AA25720AA90011D938 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		CE4607AB25720AA90011D938 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
 		CE4607B02572155C0011D938 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -106,14 +106,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE46079A2571CEE00011D938 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				CE46079E2571CF0C0011D938 /* Constants.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		CE4607A925720A5C0011D938 /* Loading */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +174,6 @@
 		CE507D86251B09AC00048598 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				CE46079A2571CEE00011D938 /* Services */,
 				CE507D90251B218200048598 /* DrawerMenu */,
 				CE507D8C251B109E00048598 /* MainViewController.swift */,
 				CE507D98251B452900048598 /* ProfileViewController.swift */,
@@ -286,6 +277,7 @@
 				CEA4C2992523A70E00281C16 /* Mentory.swift */,
 				CE4607B3257217DC0011D938 /* LoginResponse.swift */,
 				CE3ED09F2572E27B0068D577 /* StatusResponse.swift */,
+				CE3ED0A22572E3CD0068D577 /* NextSessionsResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -433,7 +425,6 @@
 				CE507D8D251B109E00048598 /* MainViewController.swift in Sources */,
 				CE46079C2571CEFA0011D938 /* WebServices.swift in Sources */,
 				CE4607B4257217DC0011D938 /* LoginResponse.swift in Sources */,
-				CE46079F2571CF0C0011D938 /* Constants.swift in Sources */,
 				CE3ED09825729F770068D577 /* GlobalValues.swift in Sources */,
 				CEA4C29D2523C63400281C16 /* SessionTableViewCell.swift in Sources */,
 				CE4607BE257219AF0011D938 /* MessageObject.swift in Sources */,
@@ -450,6 +441,7 @@
 				CE68B62F253979AB00D85D1C /* SessionRequestTableViewCell.swift in Sources */,
 				CE68B6332539875500D85D1C /* MentoringDetailViewController.swift in Sources */,
 				CE3ED09B2572BFA70068D577 /* Credential.swift in Sources */,
+				CE3ED0A32572E3CD0068D577 /* NextSessionsResponse.swift in Sources */,
 				CE507DA1251B45C800048598 /* MentoringTableViewCell.swift in Sources */,
 				CE507D8B251B0FFF00048598 /* SideMenuTableViewController.swift in Sources */,
 				CE507D99251B452900048598 /* ProfileViewController.swift in Sources */,

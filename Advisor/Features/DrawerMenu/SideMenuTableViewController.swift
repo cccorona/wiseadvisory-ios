@@ -27,7 +27,7 @@ class SideMenuTableViewController: UITableViewController {
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = UIColor.black.withAlphaComponent(0.2)
         if let picture = GlobalValues.shared.user?.picture , let url = URL.init(string: "https:"+picture) {
-            imageView.kf.setImage(with: url
+            imageView.kf.setImage(with: url)
         }
         tableView.backgroundView = imageView
     }

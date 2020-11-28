@@ -57,27 +57,57 @@ class WebServices: NSObject {
         }
     }
     
-    func updateUser(id: Int, email:String, fullname: String, empresa:String, telefone:String, picture:String, cover:String, expertise:String, tags:String, twitter_link:String, facebook_link:String, linkedin_link:String, instagram_link:String, address:String, city:String, cp:String, birthday:String, completion : @escaping ((Result<LoginResponse>) -> ())){
-        let parameters : Parameters = [
+    func updateUser(id: Int, email:String, fullname: String? = nil, empresa:String? = nil, telefone:String? = nil, picture:String? = nil, cover:String? = nil, expertise:String? = nil, tags:String? = nil, twitter_link:String? = nil, facebook_link:String? = nil, linkedin_link:String? = nil, instagram_link:String? = nil, address:String? = nil, city:String? = nil, cp:String? = nil, birthday:String? = nil, completion : @escaping ((Result<LoginResponse>) -> ())){
+        var parameters : Parameters = [
             "user_id":id,
-            "email":email,
-            "fullname":fullname,
-            "empresa":empresa,
-            "telefone":telefone,
-            "picture":picture,
-            "cover": cover,
-            "expertise":expertise,
-            "tags":tags,
-            "twitter_link":twitter_link,
-            "facebook_link":facebook_link,
-            "linkedin_link":linkedin_link,
-            "instagram_link":instagram_link,
-            "address":address,
-            "city":city,
-            "cp":cp,
-            "birthday":birthday
+            "email":email
         ]
-        AF.request(URLS.loginURL, method: .post, parameters: parameters).responseJSON { response in
+        if let fullname = fullname{
+            parameters["fullname"] = fullname
+        }
+        if let empresa = empresa{
+            parameters["empresa"] = empresa
+        }
+        if let telefone = telefone{
+            parameters["telefone"] = telefone
+        }
+        if let picture = picture{
+            parameters["picture"] = picture
+        }
+        if let cover = cover{
+            parameters["cover"] = cover
+        }
+        if let expertise = expertise{
+            parameters["expertise"] = expertise
+        }
+        if let tags = tags{
+            parameters["tags"] = tags
+        }
+        if let twitter_link = twitter_link{
+            parameters["twitter_link"] = twitter_link
+        }
+        if let facebook_link = facebook_link{
+            parameters["facebook_link"] = facebook_link
+        }
+        if let linkedin_link = linkedin_link{
+            parameters["linkedin_link"] = linkedin_link
+        }
+        if let instagram_link = instagram_link{
+            parameters["instagram_link"] = instagram_link
+        }
+        if let address = address{
+            parameters["address"] = address
+        }
+        if let city = city{
+            parameters["city"] = city
+        }
+        if let cp = cp{
+            parameters["cp"] = cp
+        }
+        if let birthday = birthday{
+            parameters["birthday"] = birthday
+        }
+        AF.request(URLS.updateUserURL, method: .post, parameters: parameters).responseJSON { response in
                 debugPrint(response)
             switch response.result{
             case .success( _):
@@ -298,14 +328,14 @@ class WebServices: NSObject {
     }
     
     
-    func getNextSessions(user_id:Int, completion: @escaping ((Result<LoginResponse>) -> ())){
+    func getNextSessions(user_id:Int, completion: @escaping ((Result<[NextSessionsResponse]>) -> ())){
         let url = URLS.getNextSessions+"?user_id=\(user_id)"
         AF.request(url, method: .get).responseJSON { response in
                 debugPrint(response)
             switch response.result{
             case .success( _):
                 do{
-                    let loginResult = try JSONDecoder().decode(LoginResponse.self, from: response.data!)
+                    let loginResult = try JSONDecoder().decode([NextSessionsResponse].self, from: response.data!)
                     completion(.success(loginResult))
                 }catch {
                     completion(
@@ -338,14 +368,14 @@ class WebServices: NSObject {
         }
     }
     
-    func logoutUser(user_id:Int, completion: @escaping ((Result<LoginResponse>) -> ())){
+    func logoutUser(user_id:Int, completion: @escaping ((Result<StatusResponse>) -> ())){
         let url = URLS.logoutUser+"?user_id=\(user_id)"
         AF.request(url, method: .get).responseJSON { response in
                 debugPrint(response)
             switch response.result{
             case .success( _):
                 do{
-                    let loginResult = try JSONDecoder().decode(LoginResponse.self, from: response.data!)
+                    let loginResult = try JSONDecoder().decode(StatusResponse.self, from: response.data!)
                     completion(.success(loginResult))
                 }catch {
                     completion(

@@ -11,6 +11,36 @@ import Foundation
 struct GlobalValues {
     static var shared = GlobalValues()
     var user: LoginResponse?
+    var user_id: Int {
+        self.user?.id ?? 0
+    }
+    var email: String {
+        self.user?.email ?? ""
+    }
+    var fullname: String {
+        self.user?.fullname ?? ""
+    }
+    var birthday: String {
+        self.user?.birthday ?? ""
+    }
+    var empresa: String {
+        self.user?.empresa ?? ""
+    }
+    var telefone: String {
+        self.user?.telefone ?? ""
+    }
+    var address: String {
+        self.user?.address ?? ""
+    }
+    var linkedin: String {
+        self.user?.linkedin_link ?? ""
+    }
+    var expertice: String {
+        self.user?.linkedin_link ?? ""
+    }
+    var areaDomain: String {
+        self.user?.linkedin_link ?? ""
+    }
 
     private init() { }
 }

@@ -12,7 +12,11 @@ struct LoginResponse: Decodable{
     let id: Int?
     let email: String?
     let fullname: String?
+    let birthday: String?
     let telefone: String?
+    let empresa: String?
     let picture: String?
+    let address: String?
+    let linkedin_link: String?
     let Status: String?
 }

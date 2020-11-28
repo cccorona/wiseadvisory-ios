@@ -24,6 +24,22 @@ class MainViewController: UIViewController {
         setupUI()
     }
     
+    func loadSessions(){
+        WebServices.shared().getNextSessions(
+            user_id: GlobalValues.shared.user_id) { (result) in
+            switch result{
+            case .success(let sessions):
+                self.handleSuccess(sessions)
+            case .failure(let error):
+                MessageObject.sharedInstance.showMessage(error.localizedDescription, title: "Error", accept: "Aceptar")
+            }
+        }
+    }
+    
+    func handleSuccess(_ sessions: [NextSessionsResponse]){
+        
+    }
+    
     private func setupSideMenu() {
         SideMenuManager.default.rightMenuNavigationController = storyboard?.instantiateViewController(withIdentifier: "RightMenuNavigationController") as? SideMenuNavigationController
         SideMenuManager.default.rightMenuNavigationController?.settings = makeSettings()
