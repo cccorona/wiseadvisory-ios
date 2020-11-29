@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet private weak var sessionsTableView: UITableView?
     let identifyCell = "SessionRequestTableViewCell"
+    var sessions: [NextSessionsResponse] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupUI()
+        loadSessions()
     }
     
     func loadSessions(){
@@ -37,7 +39,8 @@ class MainViewController: UIViewController {
     }
     
     func handleSuccess(_ sessions: [NextSessionsResponse]){
-        
+        self.sessions = sessions
+        sessionsTableView?.reloadData()
     }
     
     private func setupSideMenu() {
@@ -75,12 +78,12 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return sessions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifyCell)! as! SessionRequestTableViewCell
-        cell.setupUI()
+        cell.setupUI(with: sessions[indexPath.row])
         return cell
     }
     

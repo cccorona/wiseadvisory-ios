@@ -13,7 +13,7 @@ enum TabItem: String, CaseIterable {
     case main
     case profile
     case finance
-    case mentoring
+    //case mentoring
     case billing
     
     var viewController: UIViewController {
@@ -27,9 +27,9 @@ enum TabItem: String, CaseIterable {
         case .finance:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             return storyboard.instantiateViewController(withIdentifier: "NavigatorFinancieViewController")
-        case .mentoring:
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            return storyboard.instantiateViewController(withIdentifier: "NavigatorMentoringViewController")
+//        case .mentoring:
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            return storyboard.instantiateViewController(withIdentifier: "NavigatorMentoringViewController")
         case .billing:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             return storyboard.instantiateViewController(withIdentifier: "NavigatorBillingViewController")
@@ -39,13 +39,13 @@ enum TabItem: String, CaseIterable {
     var icon: UIImage {
         switch self {
         case .profile:
-            return #imageLiteral(resourceName: "guy")
+            return #imageLiteral(resourceName: "Advisor")
         case .main:
             return #imageLiteral(resourceName: "baseline_file_copy_black_24pt")
         case .finance:
             return #imageLiteral(resourceName: "baseline_sentiment_satisfied_alt_black_24pt")
-        case .mentoring:
-            return #imageLiteral(resourceName: "baseline_chat_black_24pt")
+//        case .mentoring:
+//            return #imageLiteral(resourceName: "baseline_chat_black_24pt")
         case .billing:
             return #imageLiteral(resourceName: "baseline_flash_on_black_24pt")
         }

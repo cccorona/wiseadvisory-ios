@@ -11,6 +11,14 @@ import UIKit
 class SessionRequestTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var profileImage: UIImageView?
+    @IBOutlet private weak var nameLabel: UILabel?
+    @IBOutlet private weak var dateLabel: UILabel?
+    @IBOutlet private weak var descriptionLabel: UILabel?
+    @IBOutlet private weak var tarifaLabel: UILabel?
+    @IBOutlet private weak var hoursLabel: UILabel?
+    @IBOutlet private weak var priceLabel: UILabel?
+    @IBOutlet private weak var acceptButton: UIButton?
+    @IBOutlet private weak var cancelButton: UIButton?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,8 +31,11 @@ class SessionRequestTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupUI(){
+    func setupUI(with session: NextSessionsResponse){
         profileImage?.makeCircle()
+        nameLabel?.text = "\(session.question ?? "") Cliente: \(session.user_learning.fullname)"
+        dateLabel?.text = session.date_parsed
+        tarifaLabel?.text = session.user.tarifa
     }
     
 }

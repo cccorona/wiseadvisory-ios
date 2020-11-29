@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="431" height="206"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guy" translatesAutoresizingMaskIntoConstraints="NO" id="lGY-nR-EHS">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Advisor" translatesAutoresizingMaskIntoConstraints="NO" id="lGY-nR-EHS">
                         <rect key="frame" x="0.0" y="10" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="UEJ-cL-hmf"/>
@@ -216,13 +216,21 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="acceptButton" destination="scZ-73-1eh" id="0j1-Xz-bqC"/>
+                <outlet property="cancelButton" destination="xkM-G0-QJt" id="puu-Kn-OgB"/>
+                <outlet property="dateLabel" destination="QfA-rC-Jgx" id="zaJ-Ye-cZr"/>
+                <outlet property="descriptionLabel" destination="xnj-dz-7Wz" id="Jqd-0t-bO6"/>
+                <outlet property="hoursLabel" destination="t6U-hc-Ogz" id="M7T-6T-04z"/>
+                <outlet property="nameLabel" destination="nAt-my-qdM" id="Ed8-te-t7O"/>
+                <outlet property="priceLabel" destination="ZHf-oh-CrC" id="57C-ZM-Hc9"/>
                 <outlet property="profileImage" destination="lGY-nR-EHS" id="BK6-ce-X9l"/>
+                <outlet property="tarifaLabel" destination="QzM-hI-8iT" id="3we-aF-5gJ"/>
             </connections>
             <point key="canvasLocation" x="218.11594202898553" y="94.419642857142847"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="guy" width="1200" height="675"/>
+        <image name="Advisor" width="102" height="103.5"/>
         <namedColor name="actionsCANCEL">
             <color red="0.61100000143051147" green="0.62099999189376831" blue="0.75" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

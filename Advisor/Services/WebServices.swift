@@ -125,21 +125,43 @@ class WebServices: NSObject {
         }
     }
     
-    func updateBilling(user_id:Int, razon_social:String, rfc:String, direccion:String, codigo_postal:String, ciudad:String, delegacion:String, colonia:String, uso_cfdi:String, tarjeta:String, bank:String, clabe:String,  completion : @escaping ((Result<LoginResponse>) -> ())){
-        let parameters : Parameters = [
-            "user_id": user_id,
-            "razon_social":razon_social,
-            "rfc":rfc,
-            "direccion":direccion,
-            "codigo_postal":codigo_postal,
-            "ciudad": ciudad,
-            "delegacion": delegacion,
-            "colonia":colonia,
-            "uso_cfdi":uso_cfdi,
-            "tarjeta":tarjeta,
-            "bank":bank,
-            "clabe":clabe
+    func updateBilling(user_id:Int, razon_social:String? = nil, rfc:String? = nil, direccion:String? = nil, codigo_postal:String? = nil, ciudad:String? = nil, delegacion:String? = nil, colonia:String? = nil, uso_cfdi:String? = nil, tarjeta:String? = nil, bank:String? = nil, clabe:String? = nil, completion : @escaping ((Result<LoginResponse>) -> ())){
+        var parameters : Parameters = [
+            "user_id": user_id
         ]
+        if let razon_social = razon_social{
+            parameters["razon_social"] = razon_social
+        }
+        if let rfc = rfc{
+            parameters["rfc"] = rfc
+        }
+        if let direccion = direccion{
+            parameters["direccion"] = direccion
+        }
+        if let codigo_postal = codigo_postal{
+            parameters["codigo_postal"] = codigo_postal
+        }
+        if let ciudad = ciudad{
+            parameters["ciudad"] = ciudad
+        }
+        if let delegacion = delegacion{
+            parameters["delegacion"] = delegacion
+        }
+        if let colonia = colonia{
+            parameters["colonia"] = colonia
+        }
+        if let uso_cfdi = uso_cfdi{
+            parameters["uso_cfdi"] = uso_cfdi
+        }
+        if let tarjeta = tarjeta{
+            parameters["tarjeta"] = tarjeta
+        }
+        if let bank = bank{
+            parameters["bank"] = bank
+        }
+        if let clabe = clabe{
+            parameters["clabe"] = clabe
+        }
         AF.request(URLS.updateBilling, method: .post, parameters: parameters).responseJSON { response in
                 debugPrint(response)
             switch response.result{
@@ -327,7 +349,6 @@ class WebServices: NSObject {
         }
     }
     
-    
     func getNextSessions(user_id:Int, completion: @escaping ((Result<[NextSessionsResponse]>) -> ())){
         let url = URLS.getNextSessions+"?user_id=\(user_id)"
         AF.request(url, method: .get).responseJSON { response in
@@ -348,6 +369,7 @@ class WebServices: NSObject {
         }
     }
     
+    //IS NOT WORKING
     func getlastSessions(user_id:Int, completion: @escaping ((Result<LoginResponse>) -> ())){
         let url = URLS.getlastSessions+"?user_id=\(user_id)"
         AF.request(url, method: .get).responseJSON { response in
@@ -368,6 +390,7 @@ class WebServices: NSObject {
         }
     }
     
+    //IS NOT IMPLEMENTED
     func logoutUser(user_id:Int, completion: @escaping ((Result<StatusResponse>) -> ())){
         let url = URLS.logoutUser+"?user_id=\(user_id)"
         AF.request(url, method: .get).responseJSON { response in

@@ -63,6 +63,25 @@ class LoginViewController: UIViewController {
             account: usernameTextField!.text!,
             credential: passwordTextField!.text!
         )
+        loadSessions()
+    }
+    
+    func loadSessions(){
+        WebServices.shared().getNextSessions(
+            user_id: GlobalValues.shared.user_id) { (result) in
+            switch result{
+            case .success(let sessions):
+                self.handleSuccess(sessions)
+            case .failure(_):
+                self.performSegue(withIdentifier: "homeSegue", sender: nil)
+            }
+        }
+    }
+    
+    func handleSuccess(_ sessions: [NextSessionsResponse]){
+        if sessions.count > 1{
+            GlobalValues.shared.userMentoring = sessions.first?.user
+        }
         performSegue(withIdentifier: "homeSegue", sender: nil)
     }
 }

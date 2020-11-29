@@ -153,8 +153,9 @@ class ProfileViewController: UIViewController {
             MessageObject.sharedInstance.showMessage(status, title: "Error", accept: "Aceptar")
             return
         }
+        MessageObject.sharedInstance.showMessage("Información guardada exitosamente", title: "Advisor", accept: "Aceptar")
         GlobalValues.shared.user = account
-        fillInformation()
+        //fillInformation()
     }
 }
 

@@ -17,7 +17,7 @@ class NavigationMenuBaseController: UITabBarController {
     }
     
     func loadTabBar() {
-        let tabItems: [TabItem] = [.profile, .main, .finance, .mentoring, .billing]
+        let tabItems: [TabItem] = [.profile, .main, .finance, .billing]
         self.setupCustomTabBar(tabItems) { (controllers) in
             self.viewControllers = controllers
         }
