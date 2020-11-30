@@ -6,13 +6,22 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExperienceViewController" customModule="Advisor" customModuleProvider="target">
             <connections>
                 <outlet property="backButton" destination="Dan-TW-R5Z" id="lkf-1b-70I"/>
+                <outlet property="cityTextField" destination="Qwn-F5-DZg" id="hWh-bx-WNc"/>
+                <outlet property="companyNameTextField" destination="q9p-ZX-n1d" id="Lvj-b8-Jho"/>
+                <outlet property="countryTextField" destination="F5A-Ta-fdH" id="1As-xK-R6V"/>
+                <outlet property="listExperiences" destination="YiK-ix-FgH" id="pvZ-Dv-wUp"/>
+                <outlet property="positionTextField" destination="YgK-ju-Qd7" id="ma0-PF-0r4"/>
+                <outlet property="responsabilitiesTextField" destination="S7V-5o-p0Y" id="4Wy-iW-1rF"/>
+                <outlet property="saveButton" destination="MXp-xK-gdg" id="FBB-EG-C5M"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yearsTextField" destination="GBh-7J-DOs" id="fLX-Zx-D9j"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -37,72 +46,105 @@
                         <constraint firstAttribute="bottom" secondItem="Dan-TW-R5Z" secondAttribute="bottom" constant="8" id="qtM-bm-lyr"/>
                     </constraints>
                 </view>
-                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vGT-gf-NJq">
-                    <rect key="frame" x="20" y="292" width="374" height="357.5"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Fr-0U-aHD">
+                    <rect key="frame" x="10" y="95" width="394" height="777"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis eperiencias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efd-fn-b6C">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vGT-gf-NJq">
+                            <rect key="frame" x="10" y="10" width="374" height="407.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis experiencias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efd-fn-b6C">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <color key="backgroundColor" name="background"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="iSk-u2-deA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4z4-Hr-eak">
+                                    <rect key="frame" x="0.0" y="60" width="374" height="2"/>
+                                    <color key="backgroundColor" name="borderBackground"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="bLe-X1-3ci"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q9p-ZX-n1d" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                    <rect key="frame" x="0.0" y="72" width="374" height="39"/>
+                                    <color key="backgroundColor" name="background"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Nombre de la empresa"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Años trabajando" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GBh-7J-DOs" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                    <rect key="frame" x="0.0" y="121" width="374" height="39.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ciudad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qwn-F5-DZg" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                    <rect key="frame" x="0.0" y="170.5" width="374" height="39"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Posición de la empresa" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YgK-ju-Qd7" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                    <rect key="frame" x="0.0" y="219.5" width="374" height="39.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Responsabilidades" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S7V-5o-p0Y" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                    <rect key="frame" x="0.0" y="269" width="374" height="39"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="País" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F5A-Ta-fdH" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                    <rect key="frame" x="0.0" y="318" width="374" height="39.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXp-xK-gdg">
+                                    <rect key="frame" x="0.0" y="367.5" width="374" height="40"/>
+                                    <color key="backgroundColor" name="actionsOK"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="LEI-vF-BhU"/>
+                                    </constraints>
+                                    <state key="normal" title="Agregar">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
                             <color key="backgroundColor" name="background"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="50" id="iSk-u2-deA"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4z4-Hr-eak">
-                            <rect key="frame" x="0.0" y="60" width="374" height="2"/>
-                            <color key="backgroundColor" name="borderBackground"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="2" id="bLe-X1-3ci"/>
-                            </constraints>
-                        </view>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q9p-ZX-n1d" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                            <rect key="frame" x="0.0" y="72" width="374" height="39"/>
-                            <color key="backgroundColor" name="background"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Nombre de la empresa"/>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Años trabajando" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GBh-7J-DOs" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                            <rect key="frame" x="0.0" y="121" width="374" height="39.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ciudad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qwn-F5-DZg" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                            <rect key="frame" x="0.0" y="170.5" width="374" height="39"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Posición de la empresa" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YgK-ju-Qd7" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                            <rect key="frame" x="0.0" y="219.5" width="374" height="39.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Responsabilidades" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S7V-5o-p0Y" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                            <rect key="frame" x="0.0" y="269" width="374" height="39"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="País" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F5A-Ta-fdH" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                            <rect key="frame" x="0.0" y="318" width="374" height="39.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
+                        </stackView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YiK-ix-FgH">
+                            <rect key="frame" x="10" y="427.5" width="374" height="339.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
                     </subviews>
-                    <color key="backgroundColor" name="background"/>
-                </stackView>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="YiK-ix-FgH" firstAttribute="top" secondItem="vGT-gf-NJq" secondAttribute="bottom" constant="10" id="1Nv-yh-Zq3"/>
+                        <constraint firstItem="vGT-gf-NJq" firstAttribute="leading" secondItem="3Fr-0U-aHD" secondAttribute="leading" constant="10" id="EDz-GA-Wex"/>
+                        <constraint firstItem="YiK-ix-FgH" firstAttribute="leading" secondItem="3Fr-0U-aHD" secondAttribute="leading" constant="10" id="Ya3-Wn-JwQ"/>
+                        <constraint firstAttribute="trailing" secondItem="vGT-gf-NJq" secondAttribute="trailing" constant="10" id="adb-mb-3iW"/>
+                        <constraint firstItem="vGT-gf-NJq" firstAttribute="top" secondItem="3Fr-0U-aHD" secondAttribute="top" constant="10" id="doK-P5-4kF"/>
+                        <constraint firstAttribute="bottom" secondItem="YiK-ix-FgH" secondAttribute="bottom" constant="10" id="iiO-2e-jxt"/>
+                        <constraint firstAttribute="trailing" secondItem="YiK-ix-FgH" secondAttribute="trailing" constant="10" id="isp-au-Al0"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="borderBackground"/>
             <constraints>
+                <constraint firstItem="3Fr-0U-aHD" firstAttribute="top" secondItem="h6p-no-kvj" secondAttribute="bottom" constant="10" id="HsB-IC-1yZ"/>
+                <constraint firstItem="3Fr-0U-aHD" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="10" id="HwI-Oj-Fcx"/>
                 <constraint firstItem="h6p-no-kvj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RHq-9l-UV1"/>
                 <constraint firstItem="h6p-no-kvj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SXP-5J-6Vb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3Fr-0U-aHD" secondAttribute="trailing" constant="10" id="TfS-UJ-HRS"/>
                 <constraint firstItem="h6p-no-kvj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aiu-lt-kuJ"/>
+                <constraint firstItem="3Fr-0U-aHD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="vvl-ga-Lwd"/>
             </constraints>
-            <point key="canvasLocation" x="-23" y="49"/>
+            <point key="canvasLocation" x="-23.188405797101453" y="48.883928571428569"/>
         </view>
     </objects>
     <designables>
@@ -126,6 +168,9 @@
         </designable>
     </designables>
     <resources>
+        <namedColor name="actionsOK">
+            <color red="0.0" green="0.67100000381469727" blue="0.91200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="background">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -135,5 +180,8 @@
         <namedColor name="menu">
             <color red="0.28600001335144043" green="0.29600000381469727" blue="0.37900000810623169" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

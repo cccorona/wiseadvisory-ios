@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClientsViewController" customModule="Advisor" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="mm5-m7-pdw" id="mXh-d4-3mh"/>
+                <outlet property="listClientsTableView" destination="FPK-KQ-cAd" id="Kan-vj-SNg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -40,7 +42,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QA4-cj-8Pp">
                     <rect key="frame" x="20" y="105" width="374" height="737"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tV-hQ-Q3S">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis Clientes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tV-hQ-Q3S">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="KDI-Dq-DPw"/>

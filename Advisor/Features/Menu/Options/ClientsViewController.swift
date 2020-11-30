@@ -9,14 +9,25 @@
 import UIKit
 
 class ClientsViewController: UIViewController {
-    @IBOutlet var backButton: UIButton?
+    @IBOutlet weak var backButton: UIButton?
+    @IBOutlet weak var listClientsTableView: UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        backButton?.addTarget(self, action: #selector(goBack), for: .touchUpInside)
-        // Do any additional setup after loading the view.
+        setupUI()
     }
-
+    
+    func setupUI(){
+        backButton?.addTarget(self, action: #selector(goBack), for: .touchUpInside)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dissmisKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dissmisKeyboard(){
+        self.view.endEditing(true)
+    }
+    
     @objc func goBack(){
         self.navigationController?.popViewController(animated: true)
         //self.dismiss(animated: true, completion: nil)

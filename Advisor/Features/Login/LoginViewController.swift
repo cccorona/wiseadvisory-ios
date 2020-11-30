@@ -30,6 +30,13 @@ class LoginViewController: UIViewController {
         signInButton?.addTarget(self, action: #selector(signInAction), for: .touchUpInside)
         usernameTextField?.text = Credential.shared.getLastAccount()
         passwordTextField?.text = Credential.shared.getLastCredential()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dissmisKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dissmisKeyboard(){
+        self.view.endEditing(true)
     }
 
     @objc func signInAction(){

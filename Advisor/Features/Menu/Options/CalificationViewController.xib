@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalificationViewController" customModule="Advisor" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="joW-8i-lhU" id="Gr4-Si-rY8"/>
+                <outlet property="notResultLabel" destination="j4Z-oG-Ayb" id="rhr-33-Dkp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -39,7 +41,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCk-gs-vnt">
                     <rect key="frame" x="20" y="105" width="374" height="737"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terminos y Condiciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjD-TP-ImG">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis calificaciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjD-TP-ImG">
                             <rect key="frame" x="20" y="20" width="334" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="gTM-mg-gdz"/>
@@ -55,15 +57,23 @@
                                 <constraint firstAttribute="height" constant="2" id="xY0-OI-uMv"/>
                             </constraints>
                         </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aún no tienes calificaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4Z-oG-Ayb">
+                            <rect key="frame" x="81.5" y="358" width="211" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" name="background"/>
                     <constraints>
                         <constraint firstItem="Y86-AJ-3Hy" firstAttribute="leading" secondItem="vCk-gs-vnt" secondAttribute="leading" id="75C-3G-vxk"/>
                         <constraint firstAttribute="trailing" secondItem="tjD-TP-ImG" secondAttribute="trailing" constant="20" id="QHM-lu-n0g"/>
+                        <constraint firstItem="j4Z-oG-Ayb" firstAttribute="centerX" secondItem="vCk-gs-vnt" secondAttribute="centerX" id="R1e-hr-kN6"/>
                         <constraint firstItem="Y86-AJ-3Hy" firstAttribute="top" secondItem="tjD-TP-ImG" secondAttribute="bottom" id="Zp2-IZ-sEE"/>
                         <constraint firstItem="tjD-TP-ImG" firstAttribute="leading" secondItem="vCk-gs-vnt" secondAttribute="leading" constant="20" id="bSM-gN-a7P"/>
                         <constraint firstItem="tjD-TP-ImG" firstAttribute="top" secondItem="vCk-gs-vnt" secondAttribute="top" constant="20" id="c3E-zU-7X2"/>
                         <constraint firstAttribute="trailing" secondItem="Y86-AJ-3Hy" secondAttribute="trailing" id="eGr-u5-fBJ"/>
+                        <constraint firstItem="j4Z-oG-Ayb" firstAttribute="centerY" secondItem="vCk-gs-vnt" secondAttribute="centerY" id="pc3-b7-PKv"/>
                     </constraints>
                 </view>
             </subviews>

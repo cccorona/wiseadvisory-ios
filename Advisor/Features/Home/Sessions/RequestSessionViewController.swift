@@ -21,6 +21,13 @@ class RequestSessionViewController: UIViewController {
     
     func setupUI(){
         createButton?.addTarget(self, action: #selector(createSession), for: .touchUpInside)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dissmisKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dissmisKeyboard(){
+        self.view.endEditing(true)
     }
     
     @objc func createSession(){

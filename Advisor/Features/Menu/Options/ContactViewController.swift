@@ -7,15 +7,32 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 class ContactViewController: UIViewController {
     @IBOutlet var backButton: UIButton?
     
+    @IBOutlet weak var asuntoTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var detailTextView: UITextView!
+    @IBOutlet weak var saveButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         backButton?.addTarget(self, action: #selector(goBack), for: .touchUpInside)
-        // Do any additional setup after loading the view.
+        setupUI()
     }
+    
+    func setupUI(){
+        backButton?.addTarget(self, action: #selector(goBack), for: .touchUpInside)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dissmisKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dissmisKeyboard(){
+        self.view.endEditing(true)
+    }
+    
 
     @objc func goBack(){
         self.navigationController?.popViewController(animated: true)

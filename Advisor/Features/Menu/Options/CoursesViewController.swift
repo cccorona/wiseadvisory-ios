@@ -7,15 +7,37 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 class CoursesViewController: UIViewController {
     @IBOutlet var backButton: UIButton?
+    @IBOutlet weak var institutionNameTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var careerNameTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var tituloTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var studiedYearsTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var cityTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var countryTextField: SkyFloatingLabelTextField!
+    
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var coursesTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         backButton?.addTarget(self, action: #selector(goBack), for: .touchUpInside)
-        // Do any additional setup after loading the view.
+        setupUI()
     }
+    
+    func setupUI(){
+        backButton?.addTarget(self, action: #selector(goBack), for: .touchUpInside)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dissmisKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dissmisKeyboard(){
+        self.view.endEditing(true)
+    }
+    
 
     @objc func goBack(){
         self.navigationController?.popViewController(animated: true)

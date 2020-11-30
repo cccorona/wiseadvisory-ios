@@ -12,6 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LanguajeViewController" customModule="Advisor" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="JEg-QT-Qx5" id="cLK-qu-qcR"/>
+                <outlet property="experienceTextField" destination="dCC-nO-4QD" id="qiX-LC-pgc"/>
+                <outlet property="languajeNameTextField" destination="8Dw-7d-itS" id="KV4-v8-XlC"/>
+                <outlet property="listLanguajeTableView" destination="TCE-7H-X8s" id="RkD-d1-Pym"/>
+                <outlet property="saveButton" destination="7b0-8i-jah" id="I8E-9L-8SI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -40,7 +45,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Bx-Ho-Umv">
                     <rect key="frame" x="20" y="105" width="374" height="737"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terminos y Condiciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfJ-D9-cFc">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idiomas que hablo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfJ-D9-cFc">
                             <rect key="frame" x="20" y="20" width="334" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
@@ -53,29 +58,64 @@
                                 <constraint firstAttribute="height" constant="2" id="UOh-1S-7Xl"/>
                             </constraints>
                         </view>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Usy-8i-ypf">
-                            <rect key="frame" x="10" y="53" width="354" height="128"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre del idioma" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Dw-7d-itS" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                            <rect key="frame" x="10" y="63" width="354" height="40"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="128" id="NKN-gu-4Gs"/>
+                                <constraint firstAttribute="height" constant="40" id="Bnt-us-Pu0"/>
                             </constraints>
-                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                            <color key="textColor" systemColor="labelColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        </textView>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Nombre del idioma"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Experiencia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dCC-nO-4QD" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                            <rect key="frame" x="10" y="113" width="354" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="pnB-kw-VS3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Experiencia"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b0-8i-jah">
+                            <rect key="frame" x="10" y="163" width="354" height="40"/>
+                            <color key="backgroundColor" name="actionsOK"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="LbN-8g-IFl"/>
+                            </constraints>
+                            <state key="normal" title="Agregar">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TCE-7H-X8s">
+                            <rect key="frame" x="10" y="213" width="354" height="514"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
                     </subviews>
                     <color key="backgroundColor" name="background"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Ofd-Hg-kdD" secondAttribute="trailing" id="1pe-XN-lI5"/>
-                        <constraint firstAttribute="trailing" secondItem="Usy-8i-ypf" secondAttribute="trailing" constant="10" id="3cg-In-xdA"/>
-                        <constraint firstItem="Usy-8i-ypf" firstAttribute="top" secondItem="Ofd-Hg-kdD" secondAttribute="bottom" constant="10" id="6z9-dW-JfD"/>
+                        <constraint firstItem="TCE-7H-X8s" firstAttribute="top" secondItem="7b0-8i-jah" secondAttribute="bottom" constant="10" id="5GF-Zc-g9v"/>
+                        <constraint firstItem="7b0-8i-jah" firstAttribute="leading" secondItem="9Bx-Ho-Umv" secondAttribute="leading" constant="10" id="81D-c0-t6j"/>
                         <constraint firstItem="Ofd-Hg-kdD" firstAttribute="top" secondItem="CfJ-D9-cFc" secondAttribute="bottom" id="Cdt-ZX-Sqf"/>
                         <constraint firstItem="Ofd-Hg-kdD" firstAttribute="leading" secondItem="9Bx-Ho-Umv" secondAttribute="leading" id="Ecc-8Y-ySM"/>
+                        <constraint firstItem="8Dw-7d-itS" firstAttribute="leading" secondItem="9Bx-Ho-Umv" secondAttribute="leading" constant="10" id="P6I-fX-Vxn"/>
                         <constraint firstItem="CfJ-D9-cFc" firstAttribute="top" secondItem="9Bx-Ho-Umv" secondAttribute="top" constant="20" id="Vt6-OX-gjV"/>
+                        <constraint firstAttribute="trailing" secondItem="7b0-8i-jah" secondAttribute="trailing" constant="10" id="fey-zG-7wb"/>
+                        <constraint firstAttribute="trailing" secondItem="TCE-7H-X8s" secondAttribute="trailing" constant="10" id="jBe-a5-tCU"/>
                         <constraint firstItem="CfJ-D9-cFc" firstAttribute="leading" secondItem="9Bx-Ho-Umv" secondAttribute="leading" constant="20" id="lKZ-y0-s9i"/>
+                        <constraint firstAttribute="trailing" secondItem="8Dw-7d-itS" secondAttribute="trailing" constant="10" id="oxS-EY-Osd"/>
                         <constraint firstAttribute="trailing" secondItem="CfJ-D9-cFc" secondAttribute="trailing" constant="20" id="ped-Md-Gn8"/>
-                        <constraint firstItem="Usy-8i-ypf" firstAttribute="leading" secondItem="9Bx-Ho-Umv" secondAttribute="leading" constant="10" id="sjq-1g-wx1"/>
+                        <constraint firstItem="dCC-nO-4QD" firstAttribute="leading" secondItem="9Bx-Ho-Umv" secondAttribute="leading" constant="10" id="pmv-QN-f7m"/>
+                        <constraint firstItem="8Dw-7d-itS" firstAttribute="top" secondItem="Ofd-Hg-kdD" secondAttribute="bottom" constant="20" id="qks-xO-u4O"/>
+                        <constraint firstAttribute="bottom" secondItem="TCE-7H-X8s" secondAttribute="bottom" constant="10" id="r4S-8C-get"/>
+                        <constraint firstItem="TCE-7H-X8s" firstAttribute="leading" secondItem="9Bx-Ho-Umv" secondAttribute="leading" constant="10" id="rZz-MG-292"/>
+                        <constraint firstItem="dCC-nO-4QD" firstAttribute="top" secondItem="8Dw-7d-itS" secondAttribute="bottom" constant="10" id="sXk-aa-4KA"/>
+                        <constraint firstItem="7b0-8i-jah" firstAttribute="top" secondItem="dCC-nO-4QD" secondAttribute="bottom" constant="10" id="wzh-8M-6do"/>
+                        <constraint firstAttribute="trailing" secondItem="dCC-nO-4QD" secondAttribute="trailing" constant="10" id="xsC-pR-KSa"/>
                     </constraints>
                 </view>
             </subviews>
@@ -93,7 +133,18 @@
             <point key="canvasLocation" x="-23" y="49"/>
         </view>
     </objects>
+    <designables>
+        <designable name="8Dw-7d-itS">
+            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
+        </designable>
+        <designable name="dCC-nO-4QD">
+            <size key="intrinsicContentSize" width="354" height="39.220703125"/>
+        </designable>
+    </designables>
     <resources>
+        <namedColor name="actionsOK">
+            <color red="0.0" green="0.67100000381469727" blue="0.91200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="background">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -103,9 +154,6 @@
         <namedColor name="menu">
             <color red="0.28600001335144043" green="0.29600000381469727" blue="0.37900000810623169" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

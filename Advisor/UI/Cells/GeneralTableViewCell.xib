@@ -10,14 +10,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" restorationIdentifier="MenuTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableViewCell" id="KGk-i7-Jjw" customClass="MenuTableViewCell" customModule="Advisor" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GeneralTableViewCell" customModule="Advisor" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGt-pB-poS">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcs-IA-aht">
                         <rect key="frame" x="10" y="10" width="300" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -25,17 +25,17 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="GGt-pB-poS" secondAttribute="trailing" constant="10" id="1M8-BV-BcD"/>
-                    <constraint firstAttribute="bottom" secondItem="GGt-pB-poS" secondAttribute="bottom" constant="10" id="i7C-ha-NJU"/>
-                    <constraint firstItem="GGt-pB-poS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="pUO-Qy-l33"/>
-                    <constraint firstItem="GGt-pB-poS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="rKG-jc-TPj"/>
+                    <constraint firstAttribute="trailing" secondItem="Tcs-IA-aht" secondAttribute="trailing" constant="10" id="fhZ-24-1Ql"/>
+                    <constraint firstAttribute="bottom" secondItem="Tcs-IA-aht" secondAttribute="bottom" constant="10" id="iRg-mP-KQ2"/>
+                    <constraint firstItem="Tcs-IA-aht" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="naK-J7-bSQ"/>
+                    <constraint firstItem="Tcs-IA-aht" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="w1E-pJ-Rgb"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="title" destination="GGt-pB-poS" id="kLz-qp-JE1"/>
+                <outlet property="title" destination="Tcs-IA-aht" id="oQ5-ws-7Hs"/>
             </connections>
-            <point key="canvasLocation" x="71" y="49"/>
+            <point key="canvasLocation" x="71" y="83"/>
         </tableViewCell>
     </objects>
 </document>

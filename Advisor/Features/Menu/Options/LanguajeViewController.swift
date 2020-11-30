@@ -7,16 +7,34 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 class LanguajeViewController: UIViewController {
 
     @IBOutlet var backButton: UIButton?
     
+    @IBOutlet weak var languajeNameTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var experienceTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var listLanguajeTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         backButton?.addTarget(self, action: #selector(goBack), for: .touchUpInside)
-        // Do any additional setup after loading the view.
+        setupUI()
     }
+    
+    func setupUI(){
+        backButton?.addTarget(self, action: #selector(goBack), for: .touchUpInside)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dissmisKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dissmisKeyboard(){
+        self.view.endEditing(true)
+    }
+    
 
     @objc func goBack(){
         self.navigationController?.popViewController(animated: true)

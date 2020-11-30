@@ -13,8 +13,6 @@
 		CE3ED0A02572E27B0068D577 /* StatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED09F2572E27B0068D577 /* StatusResponse.swift */; };
 		CE3ED0A32572E3CD0068D577 /* NextSessionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED0A22572E3CD0068D577 /* NextSessionsResponse.swift */; };
 		CE3ED0A7257441710068D577 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED0A6257441710068D577 /* BaseViewController.swift */; };
-		CE3ED0AC257455D80068D577 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED0AA257455D80068D577 /* MenuTableViewCell.swift */; };
-		CE3ED0AD257455D80068D577 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3ED0AB257455D80068D577 /* MenuTableViewCell.xib */; };
 		CE46079C2571CEFA0011D938 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46079B2571CEF90011D938 /* WebServices.swift */; };
 		CE4607AC25720AA90011D938 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4607AA25720AA90011D938 /* LoadingViewController.swift */; };
 		CE4607AD25720AA90011D938 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4607AB25720AA90011D938 /* LoadingViewController.xib */; };
@@ -42,6 +40,8 @@
 		CE507DA6251D90E300048598 /* TabItem .swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507DA5251D90E300048598 /* TabItem .swift */; };
 		CE507DA8251D925500048598 /* NavigationMenuBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507DA7251D925500048598 /* NavigationMenuBase.swift */; };
 		CE507DAA251D929200048598 /* TabNavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE507DA9251D929200048598 /* TabNavigationMenu.swift */; };
+		CE632BDD2574D1320058F416 /* GeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE632BDB2574D1320058F416 /* GeneralTableViewCell.swift */; };
+		CE632BDE2574D1320058F416 /* GeneralTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE632BDC2574D1320058F416 /* GeneralTableViewCell.xib */; };
 		CE68B6232539720B00D85D1C /* CommonServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68B6222539720B00D85D1C /* CommonServices.swift */; };
 		CE68B62F253979AB00D85D1C /* SessionRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68B62D253979AB00D85D1C /* SessionRequestTableViewCell.swift */; };
 		CE68B630253979AB00D85D1C /* SessionRequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68B62E253979AB00D85D1C /* SessionRequestTableViewCell.xib */; };
@@ -78,8 +78,6 @@
 		CE3ED09F2572E27B0068D577 /* StatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusResponse.swift; sourceTree = "<group>"; };
 		CE3ED0A22572E3CD0068D577 /* NextSessionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextSessionsResponse.swift; sourceTree = "<group>"; };
 		CE3ED0A6257441710068D577 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		CE3ED0AA257455D80068D577 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
-		CE3ED0AB257455D80068D577 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		CE46079B2571CEF90011D938 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		CE4607AA25720AA90011D938 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		CE4607AB25720AA90011D938 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
@@ -109,6 +107,8 @@
 		CE507DA5251D90E300048598 /* TabItem .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabItem .swift"; sourceTree = "<group>"; };
 		CE507DA7251D925500048598 /* NavigationMenuBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMenuBase.swift; sourceTree = "<group>"; };
 		CE507DA9251D929200048598 /* TabNavigationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationMenu.swift; sourceTree = "<group>"; };
+		CE632BDB2574D1320058F416 /* GeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTableViewCell.swift; sourceTree = "<group>"; };
+		CE632BDC2574D1320058F416 /* GeneralTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralTableViewCell.xib; sourceTree = "<group>"; };
 		CE68B6222539720B00D85D1C /* CommonServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonServices.swift; sourceTree = "<group>"; };
 		CE68B62D253979AB00D85D1C /* SessionRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRequestTableViewCell.swift; sourceTree = "<group>"; };
 		CE68B62E253979AB00D85D1C /* SessionRequestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionRequestTableViewCell.xib; sourceTree = "<group>"; };
@@ -281,8 +281,8 @@
 				CEA4C29C2523C63400281C16 /* SessionTableViewCell.xib */,
 				CE68B62D253979AB00D85D1C /* SessionRequestTableViewCell.swift */,
 				CE68B62E253979AB00D85D1C /* SessionRequestTableViewCell.xib */,
-				CE3ED0AA257455D80068D577 /* MenuTableViewCell.swift */,
-				CE3ED0AB257455D80068D577 /* MenuTableViewCell.xib */,
+				CE632BDB2574D1320058F416 /* GeneralTableViewCell.swift */,
+				CE632BDC2574D1320058F416 /* GeneralTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -498,9 +498,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE632BDE2574D1320058F416 /* GeneralTableViewCell.xib in Resources */,
 				CEAC5CF62574954700CC73E8 /* CalificationViewController.xib in Resources */,
 				CEAC5CFB2574956A00CC73E8 /* ExperienceViewController.xib in Resources */,
-				CE3ED0AD257455D80068D577 /* MenuTableViewCell.xib in Resources */,
 				CE507D7E251B079900048598 /* LaunchScreen.storyboard in Resources */,
 				CEAC5D102574962300CC73E8 /* PrivacyViewController.xib in Resources */,
 				CE507D92251B314B00048598 /* Colors.xcassets in Resources */,
@@ -575,6 +575,7 @@
 				CEAC5CF52574954700CC73E8 /* CalificationViewController.swift in Sources */,
 				CE68B6232539720B00D85D1C /* CommonServices.swift in Sources */,
 				CE507D8D251B109E00048598 /* MainViewController.swift in Sources */,
+				CE632BDD2574D1320058F416 /* GeneralTableViewCell.swift in Sources */,
 				CE3ED0A7257441710068D577 /* BaseViewController.swift in Sources */,
 				CEAC5D04257495EA00CC73E8 /* LanguajeViewController.swift in Sources */,
 				CE46079C2571CEFA0011D938 /* WebServices.swift in Sources */,
@@ -582,7 +583,6 @@
 				CE3ED09825729F770068D577 /* GlobalValues.swift in Sources */,
 				CEA4C29D2523C63400281C16 /* SessionTableViewCell.swift in Sources */,
 				CE4607BE257219AF0011D938 /* MessageObject.swift in Sources */,
-				CE3ED0AC257455D80068D577 /* MenuTableViewCell.swift in Sources */,
 				CEAC5CFA2574956A00CC73E8 /* ExperienceViewController.swift in Sources */,
 				CE507D97251B451B00048598 /* FinancieViewController.swift in Sources */,
 				CE507D9D251B456200048598 /* BillingViewController.swift in Sources */,
