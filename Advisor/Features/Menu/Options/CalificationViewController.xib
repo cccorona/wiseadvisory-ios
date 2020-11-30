@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,6 +14,7 @@
             <connections>
                 <outlet property="backButton" destination="joW-8i-lhU" id="Gr4-Si-rY8"/>
                 <outlet property="notResultLabel" destination="j4Z-oG-Ayb" id="rhr-33-Dkp"/>
+                <outlet property="resultsTableView" destination="Xsq-V5-Wrv" id="8yb-UA-hTO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -57,6 +59,10 @@
                                 <constraint firstAttribute="height" constant="2" id="xY0-OI-uMv"/>
                             </constraints>
                         </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xsq-V5-Wrv">
+                            <rect key="frame" x="10" y="82" width="354" height="645"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aún no tienes calificaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4Z-oG-Ayb">
                             <rect key="frame" x="81.5" y="358" width="211" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -67,6 +73,8 @@
                     <color key="backgroundColor" name="background"/>
                     <constraints>
                         <constraint firstItem="Y86-AJ-3Hy" firstAttribute="leading" secondItem="vCk-gs-vnt" secondAttribute="leading" id="75C-3G-vxk"/>
+                        <constraint firstAttribute="trailing" secondItem="Xsq-V5-Wrv" secondAttribute="trailing" constant="10" id="EwD-ef-uM3"/>
+                        <constraint firstAttribute="bottom" secondItem="Xsq-V5-Wrv" secondAttribute="bottom" constant="10" id="KiB-5k-LcD"/>
                         <constraint firstAttribute="trailing" secondItem="tjD-TP-ImG" secondAttribute="trailing" constant="20" id="QHM-lu-n0g"/>
                         <constraint firstItem="j4Z-oG-Ayb" firstAttribute="centerX" secondItem="vCk-gs-vnt" secondAttribute="centerX" id="R1e-hr-kN6"/>
                         <constraint firstItem="Y86-AJ-3Hy" firstAttribute="top" secondItem="tjD-TP-ImG" secondAttribute="bottom" id="Zp2-IZ-sEE"/>
@@ -74,6 +82,8 @@
                         <constraint firstItem="tjD-TP-ImG" firstAttribute="top" secondItem="vCk-gs-vnt" secondAttribute="top" constant="20" id="c3E-zU-7X2"/>
                         <constraint firstAttribute="trailing" secondItem="Y86-AJ-3Hy" secondAttribute="trailing" id="eGr-u5-fBJ"/>
                         <constraint firstItem="j4Z-oG-Ayb" firstAttribute="centerY" secondItem="vCk-gs-vnt" secondAttribute="centerY" id="pc3-b7-PKv"/>
+                        <constraint firstItem="Xsq-V5-Wrv" firstAttribute="top" secondItem="Y86-AJ-3Hy" secondAttribute="bottom" constant="10" id="yY4-i7-1AX"/>
+                        <constraint firstItem="Xsq-V5-Wrv" firstAttribute="leading" secondItem="vCk-gs-vnt" secondAttribute="leading" constant="10" id="zYv-aT-XGq"/>
                     </constraints>
                 </view>
             </subviews>
@@ -88,7 +98,7 @@
                 <constraint firstItem="vCk-gs-vnt" firstAttribute="top" secondItem="bHa-l9-MiT" secondAttribute="bottom" constant="20" id="n8M-ad-YYe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vCk-gs-vnt" secondAttribute="trailing" constant="20" id="taR-Np-kgv"/>
             </constraints>
-            <point key="canvasLocation" x="-23" y="49"/>
+            <point key="canvasLocation" x="-23.188405797101453" y="48.883928571428569"/>
         </view>
     </objects>
     <resources>
@@ -101,5 +111,8 @@
         <namedColor name="menu">
             <color red="0.28600001335144043" green="0.29600000381469727" blue="0.37900000810623169" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
