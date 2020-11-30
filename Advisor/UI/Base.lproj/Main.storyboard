@@ -1271,7 +1271,7 @@
         <!--Login View Controller-->
         <scene sceneID="pdN-rH-Bjp">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="4tf-fl-47H" customClass="LoginViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4tf-fl-47H" customClass="LoginViewController" customModule="Advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gnj-AT-O5Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1428,7 +1428,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9r-Be-Mh6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="916" y="1458"/>
+            <point key="canvasLocation" x="877" y="1458"/>
         </scene>
         <!--NavigatorMentoringViewController-->
         <scene sceneID="7vI-nR-HMU">
@@ -1447,7 +1447,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIp-T3-mLA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906" y="2141"/>
+            <point key="canvasLocation" x="877" y="2141"/>
         </scene>
         <!--NavigatorMentoringViewController-->
         <scene sceneID="bkB-uC-dFr">
@@ -1743,7 +1743,7 @@
         <!--Navigation Controller-->
         <scene sceneID="wWF-27-LmK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="flT-IJ-kpK" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="StartID" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="flT-IJ-kpK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mxg-gX-P1R">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

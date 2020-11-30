@@ -14,12 +14,30 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSideMenu()
+        setupNotification()
+    }
+    
+    private func setupNotification(){
+        NotificationCenter.default.addObserver(self, selector: #selector(closeSession), name: .Logout, object: nil)
+    }
+    
+    @objc func closeSession(){
+        WebServices.shared().logoutUser(
+            user_id: GlobalValues.shared.user_id
+        ) { (result) in
+            print(result)
+            self.handleCloseSession()
+        }
+    }
+    
+    func handleCloseSession(){
+        Credential.shared.logOut()
+        let vc = (storyboard?.instantiateViewController(withIdentifier: "StartID"))!
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
     }
     
     open func showMenu(){
-//        let menu = storyboard!.instantiateViewController(withIdentifier: "RightMenuNavigationController") as! SideMenuNavigationController
-//        menu.SideMenuNavigationControllerDelegate = self
-//        present(menu, animated: true, completion: nil)
         present(SideMenuManager.default.rightMenuNavigationController!, animated: true, completion: nil)
     }
     
