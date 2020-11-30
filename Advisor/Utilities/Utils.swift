@@ -708,3 +708,6 @@ private extension String {
     ]
 }
 
+extension Notification.Name {
+    static let Logout = NSNotification.Name("Logout")
+}

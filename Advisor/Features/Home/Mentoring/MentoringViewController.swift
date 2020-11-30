@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MentoringViewController: UIViewController {
+class MentoringViewController: BaseViewController {
     
     @IBOutlet private weak var tableView: UITableView?
     let identifyCell = "MentoringTableViewCell"

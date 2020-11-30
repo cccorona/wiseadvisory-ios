@@ -43,11 +43,13 @@ class LoginViewController: UIViewController {
             MessageObject.sharedInstance.showMessage("Favor de ingresar todos los datos", title: "Error", accept: "Aceptar")
             return
         }
+        WebServices.shared().showLoading()
         WebServices.shared().loginUser(username, pass: password) { (result) in
             switch result{
             case .success(let account):
                 self.handleSuccess(account: account)
             case .failure(let error):
+                WebServices.shared().hideLoading()
                 MessageObject.sharedInstance.showMessage(error.localizedDescription, title: "Error", accept: "Aceptar")
             }
         }
@@ -73,6 +75,7 @@ class LoginViewController: UIViewController {
             case .success(let sessions):
                 self.handleSuccess(sessions)
             case .failure(_):
+                WebServices.shared().hideLoading()
                 self.performSegue(withIdentifier: "homeSegue", sender: nil)
             }
         }
@@ -82,6 +85,7 @@ class LoginViewController: UIViewController {
         if sessions.count > 1{
             GlobalValues.shared.userMentoring = sessions.first?.user
         }
+        WebServices.shared().hideLoading()
         performSegue(withIdentifier: "homeSegue", sender: nil)
     }
 }

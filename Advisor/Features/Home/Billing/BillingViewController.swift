@@ -9,7 +9,7 @@
 import UIKit
 import SkyFloatingLabelTextField
 
-class BillingViewController: UIViewController {
+class BillingViewController: BaseViewController {
 
     @IBOutlet weak var socialTxtField: SkyFloatingLabelTextField!
     @IBOutlet weak var rfcTxtField: SkyFloatingLabelTextField!

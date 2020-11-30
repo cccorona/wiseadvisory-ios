@@ -12,6 +12,9 @@
 		CE3ED09B2572BFA70068D577 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED09A2572BFA70068D577 /* Credential.swift */; };
 		CE3ED0A02572E27B0068D577 /* StatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED09F2572E27B0068D577 /* StatusResponse.swift */; };
 		CE3ED0A32572E3CD0068D577 /* NextSessionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED0A22572E3CD0068D577 /* NextSessionsResponse.swift */; };
+		CE3ED0A7257441710068D577 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED0A6257441710068D577 /* BaseViewController.swift */; };
+		CE3ED0AC257455D80068D577 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3ED0AA257455D80068D577 /* MenuTableViewCell.swift */; };
+		CE3ED0AD257455D80068D577 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3ED0AB257455D80068D577 /* MenuTableViewCell.xib */; };
 		CE46079C2571CEFA0011D938 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46079B2571CEF90011D938 /* WebServices.swift */; };
 		CE4607AC25720AA90011D938 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4607AA25720AA90011D938 /* LoadingViewController.swift */; };
 		CE4607AD25720AA90011D938 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4607AB25720AA90011D938 /* LoadingViewController.xib */; };
@@ -46,6 +49,25 @@
 		CEA4C29A2523A70E00281C16 /* Mentory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4C2992523A70E00281C16 /* Mentory.swift */; };
 		CEA4C29D2523C63400281C16 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4C29B2523C63400281C16 /* SessionTableViewCell.swift */; };
 		CEA4C29E2523C63400281C16 /* SessionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA4C29C2523C63400281C16 /* SessionTableViewCell.xib */; };
+		CEAC5CEB257490EB00CC73E8 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC5CE9257490EB00CC73E8 /* TermsAndConditionsViewController.swift */; };
+		CEAC5CEC257490EB00CC73E8 /* TermsAndConditionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC5CEA257490EB00CC73E8 /* TermsAndConditionsViewController.xib */; };
+		CEAC5CF02574951F00CC73E8 /* ClientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC5CEE2574951F00CC73E8 /* ClientsViewController.swift */; };
+		CEAC5CF12574951F00CC73E8 /* ClientsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC5CEF2574951F00CC73E8 /* ClientsViewController.xib */; };
+		CEAC5CF52574954700CC73E8 /* CalificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC5CF32574954700CC73E8 /* CalificationViewController.swift */; };
+		CEAC5CF62574954700CC73E8 /* CalificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC5CF42574954700CC73E8 /* CalificationViewController.xib */; };
+		CEAC5CFA2574956A00CC73E8 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC5CF82574956A00CC73E8 /* ExperienceViewController.swift */; };
+		CEAC5CFB2574956A00CC73E8 /* ExperienceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC5CF92574956A00CC73E8 /* ExperienceViewController.xib */; };
+		CEAC5CFF257495CB00CC73E8 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC5CFD257495CB00CC73E8 /* CoursesViewController.swift */; };
+		CEAC5D00257495CB00CC73E8 /* CoursesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC5CFE257495CB00CC73E8 /* CoursesViewController.xib */; };
+		CEAC5D04257495EA00CC73E8 /* LanguajeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC5D02257495EA00CC73E8 /* LanguajeViewController.swift */; };
+		CEAC5D05257495EA00CC73E8 /* LanguajeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC5D03257495EA00CC73E8 /* LanguajeViewController.xib */; };
+		CEAC5D0A2574960700CC73E8 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC5D082574960700CC73E8 /* ContactViewController.swift */; };
+		CEAC5D0B2574960700CC73E8 /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC5D092574960700CC73E8 /* ContactViewController.xib */; };
+		CEAC5D0F2574962300CC73E8 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC5D0D2574962300CC73E8 /* PrivacyViewController.swift */; };
+		CEAC5D102574962300CC73E8 /* PrivacyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAC5D0E2574962300CC73E8 /* PrivacyViewController.xib */; };
+		CEAC5D152574ACCA00CC73E8 /* RequestSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC5D142574ACCA00CC73E8 /* RequestSessionViewController.swift */; };
+		CEAC5D182574B44000CC73E8 /* SeeSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC5D172574B44000CC73E8 /* SeeSessionViewController.swift */; };
+		CEAC5D1B2574B4B300CC73E8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAC5D1A2574B4B300CC73E8 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +77,9 @@
 		CE3ED09A2572BFA70068D577 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		CE3ED09F2572E27B0068D577 /* StatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusResponse.swift; sourceTree = "<group>"; };
 		CE3ED0A22572E3CD0068D577 /* NextSessionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextSessionsResponse.swift; sourceTree = "<group>"; };
+		CE3ED0A6257441710068D577 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CE3ED0AA257455D80068D577 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		CE3ED0AB257455D80068D577 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		CE46079B2571CEF90011D938 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		CE4607AA25720AA90011D938 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		CE4607AB25720AA90011D938 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
@@ -91,6 +116,25 @@
 		CEA4C2992523A70E00281C16 /* Mentory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentory.swift; sourceTree = "<group>"; };
 		CEA4C29B2523C63400281C16 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
 		CEA4C29C2523C63400281C16 /* SessionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionTableViewCell.xib; sourceTree = "<group>"; };
+		CEAC5CE9257490EB00CC73E8 /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
+		CEAC5CEA257490EB00CC73E8 /* TermsAndConditionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsAndConditionsViewController.xib; sourceTree = "<group>"; };
+		CEAC5CEE2574951F00CC73E8 /* ClientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsViewController.swift; sourceTree = "<group>"; };
+		CEAC5CEF2574951F00CC73E8 /* ClientsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientsViewController.xib; sourceTree = "<group>"; };
+		CEAC5CF32574954700CC73E8 /* CalificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalificationViewController.swift; sourceTree = "<group>"; };
+		CEAC5CF42574954700CC73E8 /* CalificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalificationViewController.xib; sourceTree = "<group>"; };
+		CEAC5CF82574956A00CC73E8 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		CEAC5CF92574956A00CC73E8 /* ExperienceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExperienceViewController.xib; sourceTree = "<group>"; };
+		CEAC5CFD257495CB00CC73E8 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		CEAC5CFE257495CB00CC73E8 /* CoursesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoursesViewController.xib; sourceTree = "<group>"; };
+		CEAC5D02257495EA00CC73E8 /* LanguajeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguajeViewController.swift; sourceTree = "<group>"; };
+		CEAC5D03257495EA00CC73E8 /* LanguajeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguajeViewController.xib; sourceTree = "<group>"; };
+		CEAC5D082574960700CC73E8 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		CEAC5D092574960700CC73E8 /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
+		CEAC5D0D2574962300CC73E8 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		CEAC5D0E2574962300CC73E8 /* PrivacyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivacyViewController.xib; sourceTree = "<group>"; };
+		CEAC5D142574ACCA00CC73E8 /* RequestSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSessionViewController.swift; sourceTree = "<group>"; };
+		CEAC5D172574B44000CC73E8 /* SeeSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeSessionViewController.swift; sourceTree = "<group>"; };
+		CEAC5D1A2574B4B300CC73E8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		FD19C77AD936DC0276CD8909 /* Pods_Advisor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Advisor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAC5D1B2574B4B300CC73E8 /* WebKit.framework in Frameworks */,
 				C505DB8F34BA0C0AA8D13A44 /* Pods_Advisor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,13 +219,9 @@
 		CE507D86251B09AC00048598 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				CE507D90251B218200048598 /* DrawerMenu */,
-				CE507D8C251B109E00048598 /* MainViewController.swift */,
-				CE507D98251B452900048598 /* ProfileViewController.swift */,
-				CE507D96251B451B00048598 /* FinancieViewController.swift */,
-				CE68B6352539877900D85D1C /* Mentoring */,
-				CE507D9C251B456200048598 /* BillingViewController.swift */,
-				CE4607B02572155C0011D938 /* LoginViewController.swift */,
+				CEAC5CE7257490C000CC73E8 /* Home */,
+				CEAC5CE6257490B600CC73E8 /* Menu */,
+				CEAC5CE4257490A200CC73E8 /* Login */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -215,6 +256,7 @@
 		CE507D90251B218200048598 /* DrawerMenu */ = {
 			isa = PBXGroup;
 			children = (
+				CE3ED0A6257441710068D577 /* BaseViewController.swift */,
 				CE507D8A251B0FFF00048598 /* SideMenuTableViewController.swift */,
 			);
 			path = DrawerMenu;
@@ -239,6 +281,8 @@
 				CEA4C29C2523C63400281C16 /* SessionTableViewCell.xib */,
 				CE68B62D253979AB00D85D1C /* SessionRequestTableViewCell.swift */,
 				CE68B62E253979AB00D85D1C /* SessionRequestTableViewCell.xib */,
+				CE3ED0AA257455D80068D577 /* MenuTableViewCell.swift */,
+				CE3ED0AB257455D80068D577 /* MenuTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -282,6 +326,100 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CEAC5CE12574908A00CC73E8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CE507D98251B452900048598 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CEAC5CE22574909200CC73E8 /* Finance */ = {
+			isa = PBXGroup;
+			children = (
+				CE507D96251B451B00048598 /* FinancieViewController.swift */,
+			);
+			path = Finance;
+			sourceTree = "<group>";
+		};
+		CEAC5CE32574909A00CC73E8 /* Billing */ = {
+			isa = PBXGroup;
+			children = (
+				CE507D9C251B456200048598 /* BillingViewController.swift */,
+			);
+			path = Billing;
+			sourceTree = "<group>";
+		};
+		CEAC5CE4257490A200CC73E8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CE4607B02572155C0011D938 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CEAC5CE5257490AE00CC73E8 /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				CE507D8C251B109E00048598 /* MainViewController.swift */,
+				CEAC5D142574ACCA00CC73E8 /* RequestSessionViewController.swift */,
+				CEAC5D172574B44000CC73E8 /* SeeSessionViewController.swift */,
+			);
+			path = Sessions;
+			sourceTree = "<group>";
+		};
+		CEAC5CE6257490B600CC73E8 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC5CE8257490CF00CC73E8 /* Options */,
+				CE507D90251B218200048598 /* DrawerMenu */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		CEAC5CE7257490C000CC73E8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC5CE5257490AE00CC73E8 /* Sessions */,
+				CEAC5CE32574909A00CC73E8 /* Billing */,
+				CEAC5CE22574909200CC73E8 /* Finance */,
+				CEAC5CE12574908A00CC73E8 /* Profile */,
+				CE68B6352539877900D85D1C /* Mentoring */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CEAC5CE8257490CF00CC73E8 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC5D07257495F200CC73E8 /* New Group */,
+				CEAC5CEE2574951F00CC73E8 /* ClientsViewController.swift */,
+				CEAC5CEF2574951F00CC73E8 /* ClientsViewController.xib */,
+				CEAC5CF32574954700CC73E8 /* CalificationViewController.swift */,
+				CEAC5CF42574954700CC73E8 /* CalificationViewController.xib */,
+				CEAC5CF82574956A00CC73E8 /* ExperienceViewController.swift */,
+				CEAC5CF92574956A00CC73E8 /* ExperienceViewController.xib */,
+				CEAC5CFD257495CB00CC73E8 /* CoursesViewController.swift */,
+				CEAC5CFE257495CB00CC73E8 /* CoursesViewController.xib */,
+				CEAC5D02257495EA00CC73E8 /* LanguajeViewController.swift */,
+				CEAC5D03257495EA00CC73E8 /* LanguajeViewController.xib */,
+				CEAC5D082574960700CC73E8 /* ContactViewController.swift */,
+				CEAC5D092574960700CC73E8 /* ContactViewController.xib */,
+				CEAC5CE9257490EB00CC73E8 /* TermsAndConditionsViewController.swift */,
+				CEAC5CEA257490EB00CC73E8 /* TermsAndConditionsViewController.xib */,
+				CEAC5D0D2574962300CC73E8 /* PrivacyViewController.swift */,
+				CEAC5D0E2574962300CC73E8 /* PrivacyViewController.xib */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+		CEAC5D07257495F200CC73E8 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		DB2A9D515A282EAE4AA7E3AF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +432,7 @@
 		EB5D15490FEC3ACB3FFBF1F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEAC5D1A2574B4B300CC73E8 /* WebKit.framework */,
 				FD19C77AD936DC0276CD8909 /* Pods_Advisor.framework */,
 			);
 			name = Frameworks;
@@ -359,13 +498,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAC5CF62574954700CC73E8 /* CalificationViewController.xib in Resources */,
+				CEAC5CFB2574956A00CC73E8 /* ExperienceViewController.xib in Resources */,
+				CE3ED0AD257455D80068D577 /* MenuTableViewCell.xib in Resources */,
 				CE507D7E251B079900048598 /* LaunchScreen.storyboard in Resources */,
+				CEAC5D102574962300CC73E8 /* PrivacyViewController.xib in Resources */,
 				CE507D92251B314B00048598 /* Colors.xcassets in Resources */,
+				CEAC5D0B2574960700CC73E8 /* ContactViewController.xib in Resources */,
 				CE68B630253979AB00D85D1C /* SessionRequestTableViewCell.xib in Resources */,
+				CEAC5D05257495EA00CC73E8 /* LanguajeViewController.xib in Resources */,
 				CEA4C29E2523C63400281C16 /* SessionTableViewCell.xib in Resources */,
 				CE507D7B251B079900048598 /* Assets.xcassets in Resources */,
+				CEAC5CEC257490EB00CC73E8 /* TermsAndConditionsViewController.xib in Resources */,
+				CEAC5D00257495CB00CC73E8 /* CoursesViewController.xib in Resources */,
 				CE507D76251B079700048598 /* Main.storyboard in Resources */,
 				CE507DA2251B45C800048598 /* MentoringTableViewCell.xib in Resources */,
+				CEAC5CF12574951F00CC73E8 /* ClientsViewController.xib in Resources */,
 				CE4607AD25720AA90011D938 /* LoadingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,23 +568,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE507D79251B079700048598 /* Advisor.xcdatamodeld in Sources */,
+				CEAC5D182574B44000CC73E8 /* SeeSessionViewController.swift in Sources */,
+				CEAC5CFF257495CB00CC73E8 /* CoursesViewController.swift in Sources */,
+				CEAC5D0A2574960700CC73E8 /* ContactViewController.swift in Sources */,
 				CE507D6F251B079700048598 /* AppDelegate.swift in Sources */,
+				CEAC5CF52574954700CC73E8 /* CalificationViewController.swift in Sources */,
 				CE68B6232539720B00D85D1C /* CommonServices.swift in Sources */,
 				CE507D8D251B109E00048598 /* MainViewController.swift in Sources */,
+				CE3ED0A7257441710068D577 /* BaseViewController.swift in Sources */,
+				CEAC5D04257495EA00CC73E8 /* LanguajeViewController.swift in Sources */,
 				CE46079C2571CEFA0011D938 /* WebServices.swift in Sources */,
 				CE4607B4257217DC0011D938 /* LoginResponse.swift in Sources */,
 				CE3ED09825729F770068D577 /* GlobalValues.swift in Sources */,
 				CEA4C29D2523C63400281C16 /* SessionTableViewCell.swift in Sources */,
 				CE4607BE257219AF0011D938 /* MessageObject.swift in Sources */,
+				CE3ED0AC257455D80068D577 /* MenuTableViewCell.swift in Sources */,
+				CEAC5CFA2574956A00CC73E8 /* ExperienceViewController.swift in Sources */,
 				CE507D97251B451B00048598 /* FinancieViewController.swift in Sources */,
 				CE507D9D251B456200048598 /* BillingViewController.swift in Sources */,
+				CEAC5D152574ACCA00CC73E8 /* RequestSessionViewController.swift in Sources */,
 				CE507DA6251D90E300048598 /* TabItem .swift in Sources */,
+				CEAC5CEB257490EB00CC73E8 /* TermsAndConditionsViewController.swift in Sources */,
 				CE4607AC25720AA90011D938 /* LoadingViewController.swift in Sources */,
 				CEA4C29A2523A70E00281C16 /* Mentory.swift in Sources */,
 				CE4607B12572155C0011D938 /* LoginViewController.swift in Sources */,
 				CE507DA4251B4C3600048598 /* NavigationBuilder.swift in Sources */,
 				CE507D71251B079700048598 /* SceneDelegate.swift in Sources */,
 				CE3ED0A02572E27B0068D577 /* StatusResponse.swift in Sources */,
+				CEAC5CF02574951F00CC73E8 /* ClientsViewController.swift in Sources */,
+				CEAC5D0F2574962300CC73E8 /* PrivacyViewController.swift in Sources */,
 				CE4607C2257219AF0011D938 /* Utils.swift in Sources */,
 				CE68B62F253979AB00D85D1C /* SessionRequestTableViewCell.swift in Sources */,
 				CE68B6332539875500D85D1C /* MentoringDetailViewController.swift in Sources */,
