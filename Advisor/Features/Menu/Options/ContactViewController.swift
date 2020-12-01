@@ -18,12 +18,12 @@ class ContactViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        backButton?.addTarget(self, action: #selector(goBack), for: .touchUpInside)
         setupUI()
     }
     
     func setupUI(){
         backButton?.addTarget(self, action: #selector(goBack), for: .touchUpInside)
+        saveButton?.addTarget(self, action: #selector(createSession), for: .touchUpInside)
         let tap = UITapGestureRecognizer(target: self, action: #selector(dissmisKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
@@ -33,20 +33,22 @@ class ContactViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-
     @objc func goBack(){
         self.navigationController?.popViewController(animated: true)
         //self.dismiss(animated: true, completion: nil)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @objc func createSession(){
+        guard let asunto = asuntoTextField?.text else{
+            return
+        }
+        guard let description = detailTextView?.text else{
+            return
+        }
+        if !asunto.isEmpty && !description.isEmpty{
+            MessageObject.sharedInstance.showMessage("Mensaje enviado con exito", title: "Advisor", accept: "Aceptar")
+        }else{
+            MessageObject.sharedInstance.showMessage("Favor de ingresar todos los datos", title: "Error", accept: "Aceptar")
+        }
     }
-    */
-
 }
