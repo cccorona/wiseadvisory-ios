@@ -19,6 +19,7 @@ struct URLS{
     static let deleteLanguage = URLS.baseURL + "deleteLanguage"
     static let deleteExperience = URLS.baseURL + "deleteExperience"
     static let deleteEducation = URLS.baseURL + "deleteEducation"
+    static let requestSession = URLS.baseURL + "send_solicitud_sesion"
     static let updatePaymentMethod = URLS.baseURL + "update_pago_metodo"
     static let getTokenCard = "https://cr.banwire.com?action=card&exist=1"
     

@@ -17,6 +17,7 @@ class RequestSessionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
     }
     
     func setupUI(){
@@ -38,9 +39,24 @@ class RequestSessionViewController: UIViewController {
             return
         }
         if !asunto.isEmpty && !description.isEmpty{
-            MessageObject.sharedInstance.showMessage("Favor de ingresar todos los datos", title: "Error", accept: "Aceptar")
+            WebServices.shared().showLoading()
+            WebServices.shared().requestSession(
+                name: GlobalValues.shared.fullname,
+                email: GlobalValues.shared.email,
+                phone: GlobalValues.shared.telefone,
+                message: description
+            ) { (result) in
+                WebServices.shared().hideLoading {
+                    switch result{
+                    case .success(let response):
+                        MessageObject.sharedInstance.showMessage(response.Status ?? "Solicitud enviada", title: "Advisor", accept: "Aceptar")
+                    case .failure(let error):
+                        MessageObject.sharedInstance.showMessage(error.localizedDescription, title: "Error", accept: "Aceptar")
+                    }
+                }
+            }
         }else{
-            MessageObject.sharedInstance.showMessage("Tu solicitud se ha generado correctamente, en un par de horas nuestro equipo se pondra en contacto contigo", title: "Advisor", accept: "Aceptar")
+            MessageObject.sharedInstance.showMessage("Favor de ingresar todos los datos", title: "Error", accept: "Aceptar")
         }
     }
 }

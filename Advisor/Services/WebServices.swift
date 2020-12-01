@@ -349,6 +349,31 @@ class WebServices: NSObject {
         }
     }
     
+    func requestSession(name:String, email:String, phone:String, message:String, completion: @escaping ((Result<StatusResponse>) -> ())){
+        let parameters : Parameters = [
+            "name":name,
+            "email":email,
+            "phone":phone,
+            "message":message
+        ]
+        AF.request(URLS.requestSession, method: .post, parameters: parameters).responseJSON { response in
+                debugPrint(response)
+            switch response.result{
+            case .success( _):
+                do{
+                    let result = try JSONDecoder().decode(StatusResponse.self, from: response.data!)
+                    completion(.success(result))
+                }catch {
+                    completion(
+                        .failure(NSError(domain: "", code: 001, userInfo: [NSLocalizedDescriptionKey: "Respuesta no aceptada"]))
+                    )
+                }
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
     func getNextSessions(user_id:Int, completion: @escaping ((Result<[NextSessionsResponse]>) -> ())){
         let url = URLS.getNextSessions+"?user_id=\(user_id)"
         AF.request(url, method: .get).responseJSON { response in
@@ -390,7 +415,6 @@ class WebServices: NSObject {
         }
     }
     
-    //IS NOT IMPLEMENTED
     func logoutUser(user_id:Int, completion: @escaping ((Result<StatusResponse>) -> ())){
         let url = URLS.logoutUser+"?user_id=\(user_id)"
         AF.request(url, method: .get).responseJSON { response in
