@@ -56,15 +56,18 @@ class LoginViewController: UIViewController {
             case .success(let account):
                 self.handleSuccess(account: account)
             case .failure(let error):
-                WebServices.shared().hideLoading()
-                MessageObject.sharedInstance.showMessage(error.localizedDescription, title: "Error", accept: "Aceptar")
+                WebServices.shared().hideLoading{
+                    MessageObject.sharedInstance.showMessage(error.localizedDescription, title: "Error", accept: "Aceptar")
+                }
             }
         }
     }
     
     func handleSuccess(account: LoginResponse){
         if let status = account.Status{
-            MessageObject.sharedInstance.showMessage(status, title: "Error", accept: "Aceptar")
+            WebServices.shared().hideLoading {
+                MessageObject.sharedInstance.showMessage(status, title: "Error", accept: "Aceptar")
+            }
             return
         }
         GlobalValues.shared.user = account
@@ -82,8 +85,9 @@ class LoginViewController: UIViewController {
             case .success(let sessions):
                 self.handleSuccess(sessions)
             case .failure(_):
-                WebServices.shared().hideLoading()
-                self.performSegue(withIdentifier: "homeSegue", sender: nil)
+                WebServices.shared().hideLoading{
+                    self.performSegue(withIdentifier: "homeSegue", sender: nil)
+                }
             }
         }
     }
@@ -92,7 +96,8 @@ class LoginViewController: UIViewController {
         if sessions.count > 1{
             GlobalValues.shared.userMentoring = sessions.first?.user
         }
-        WebServices.shared().hideLoading()
-        performSegue(withIdentifier: "homeSegue", sender: nil)
+        WebServices.shared().hideLoading{
+            self.performSegue(withIdentifier: "homeSegue", sender: nil)
+        }
     }
 }
